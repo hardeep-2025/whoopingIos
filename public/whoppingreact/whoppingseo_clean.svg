@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 252" role="img" aria-labelledby="title desc">
+  <title id="title">WhoppingSEO</title>
+  <desc id="desc">WhoppingSEO — Search Engine Marketing Services</desc>
+
+  <defs>
+    <linearGradient id="blue" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#05A9F4"/>
+      <stop offset="100%" stop-color="#0067E8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Growth/chart emblem -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M31 143 A105 105 0 0 1 203 47" stroke="url(#blue)" stroke-width="13"/>
+    <path d="M31 143 A105 105 0 0 0 211 73" stroke="url(#blue)" stroke-width="13"/>
+    <path d="M44 178 L199 47" stroke="url(#blue)" stroke-width="13"/>
+    <path d="M181 50 L201 44 L198 67" stroke="url(#blue)" stroke-width="13"/>
+  </g>
+
+  <!-- White W inside the mark -->
+  <path d="M43 92 L59 157 L78 113 L97 157 L113 91"
+        fill="none" stroke="#FFFFFF" stroke-width="15"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Rising bars -->
+  <g fill="url(#blue)">
+    <rect x="82" y="94" width="16" height="48" rx="2"/>
+    <rect x="108" y="70" width="16" height="72" rx="2"/>
+    <rect x="134" y="45" width="16" height="97" rx="2"/>
+  </g>
+
+  <!-- Brand name -->
+  <text x="226" y="137"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="78"
+        font-weight="800"
+        letter-spacing="-3"
+        fill="#FFFFFF">WHOPPING<tspan fill="url(#blue)">SEO</tspan></text>
+
+  <!-- Tagline separators -->
+  <path d="M229 174 H292" stroke="url(#blue)" stroke-width="5"/>
+  <path d="M835 174 H898" stroke="url(#blue)" stroke-width="5"/>
+
+  <!-- Tagline -->
+  <text x="565" y="182"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="25"
+        font-weight="600"
+        fill="#FFFFFF">Search Engine Marketing Services</text>
+</svg>
