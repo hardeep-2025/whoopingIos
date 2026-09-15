@@ -21,7 +21,7 @@ async function getPosts(page = 1) {
 
     const posts = await res.json();
 
-
+console.log(posts);
     const totalPages =
       Number(res.headers.get("X-WP-TotalPages")) || 1;
 
