@@ -90,6 +90,8 @@ const AboutUs = () => {
                         ↗
                       </span>
                     </button>
+
+                    
                   </div>
                 </div>
               </section>
@@ -105,7 +107,6 @@ const AboutUs = () => {
     -translate-x-1/2
     -bottom-25
     z-[100]
-    w-full
     max-w-[1197px]
 
     max-[991px]:bottom-8

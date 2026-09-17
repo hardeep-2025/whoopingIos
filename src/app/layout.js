@@ -1,10 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import Header from './Header';
-import Footer from './Footer';
-import Script from 'next/script';
+import Header from "./Header";
+import Footer from "./Footer";
+import Script from "next/script";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,16 +27,14 @@ export const metadata = {
   description: "Whopping SEO",
 };
 export default function RootLayout({ children }) {
-
-   const GA_ID = "G-L8367K40QJ";
+  const GA_ID = "G-L8367K40QJ";
 
   return (
-<html
-  lang="en"
-  className={`${geistSans.variable} ${poppins.variable} ${geistMono.variable} h-full antialiased`}
->
-
- <head>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${poppins.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <head>
         {/* Google Site Verification */}
         <meta
           name="google-site-verification"
@@ -45,10 +43,10 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className="min-h-full flex flex-col">
-       <Header></Header> 
+        <Header></Header>
         {children}
-        <Footer>  </Footer>
-         {/* Google Analytics */}
+        <Footer> </Footer>
+        {/* Google Analytics */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"
@@ -62,7 +60,7 @@ export default function RootLayout({ children }) {
             gtag('config', '${GA_ID}');
           `}
         </Script>
-        </body>
+      </body>
     </html>
   );
 }

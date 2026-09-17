@@ -89,7 +89,7 @@ img.imgeSmall {
     bottom: -5%;
     right: -5%;
 }
-.bg-black.text-white {
+.digital-back.text-white {
     width: 47%;
 }
 .imgeDiv {
@@ -128,7 +128,7 @@ nav>a {
 }.leftSide {
     width: 100%;
     margin-bottom: 4rem;
-}.bg-black.text-white {
+}.digital-back.text-white {
     width: 100%;
 }
 .numbering {
@@ -285,4 +285,20 @@ nav>a {
     align-items: center;
     text-align: center;
   }
+}
+
+
+
+@keyframes logo-slide-service {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 18.5px));
+  }
+}
+
+.animate-logo-slide-service {
+  animation: logo-slide-service 25s linear infinite;
 }
