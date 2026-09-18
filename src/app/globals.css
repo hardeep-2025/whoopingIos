@@ -56,7 +56,7 @@ line-height: 22px;
     position: relative;
 }
 span.notext {
-    margin-top: 1rem;
+    margin-top: 2px;
     position: relative;
 }
 .seoPage .no {
@@ -169,7 +169,8 @@ nav>a {
 .no {
     font-size: 65px;
     font-weight: 800;
-}span.notext {
+}
+span.notext {
   font-size: 18px;
 }img.imgeSmall {
     height: 150px;

@@ -79,14 +79,13 @@ const AboutUs = () => {
                   <div className="!mt-[54px] !flex !flex-row !items-start !gap-4 pb-1 max-[767px]:!mt-5 max-[767px]:!flex-col max-[767px]:!items-center max-[767px]:!justify-center max-[767px]:!gap-3">
                     <button className="!flex !h-[44px] w-[210px]! !items-center !justify-center !gap-2 !rounded-full !bg-[#c9e6ff] !px-6 !text-[16px] !font-bold !text-[#000000] !whitespace-nowrap">
                       Get Started Now
-                      <span className="!flex !h-[26px] !w-[26px] !items-center !justify-center">
-                        ↗
+<span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">                        ↗
                       </span>
                     </button>
 
                     <button className="!flex !h-[44px] w-[210px]! !items-center !justify-center !gap-2 !rounded-full !border !border-white/40 !bg-transparent !px-6 !text-[16px] !font-bold !text-[#FFFFFF] !whitespace-nowrap">
                       See Our Services
-                      <span className="!flex !h-[26px] !w-[26px] !items-center !justify-center">
+                      <span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">                        
                         ↗
                       </span>
                     </button>
@@ -352,13 +351,13 @@ const AboutUs = () => {
             max-[400px]:mt-6!
             font-bold!
             leading-[40px]!
-            text-[#FFFFFF]
+            text-[#FFFFFF]!
           "
               >
                 WhoppingSEO: Your Partner in Digital Success
               </h2>
 
-              <div className="text-[18px] leading-[22px] text-[#FFFFFF] max-[400px]:text-center">
+              <div className="text-[18px] leading-[22px]! text-[#FFFFFF]! max-[400px]:text-center">
                 <p>
                   At WhoppingSEO, we’re more than just a digital agency. Our
                   team of marketing experts, designers, and developers is
@@ -373,27 +372,27 @@ const AboutUs = () => {
 
                 <ul className="mt-[10px] pl-0! list-none space-y-1 px-0! text-[17px]!">
                   <li>
-                    <span>Proven Expertise:</span> Our team’s track record
+                    <span className="font-semibold">Proven Expertise:</span> Our team’s track record
                     speaks for itself.
                   </li>
 
                   <li>
-                    <span>Results-Oriented Approach:</span> We’re committed to
+                    <span className="font-semibold">Results-Oriented Approach:</span> We’re committed to
                     delivering measurable outcomes.
                   </li>
 
                   <li>
-                    <span>Client-Centric Focus:</span> Your success is our
+                    <span className="font-semibold">Client-Centric Focus:</span> Your success is our
                     priority.
                   </li>
 
                   <li>
-                    <span>Comprehensive Solutions:</span> From website design to
+                    <span className="font-semibold">Comprehensive Solutions:</span> From website design to
                     SEO and marketing, we offer a full suite of services.
                   </li>
 
                   <li>
-                    <span>Ongoing Support:</span> We’re here to assist you long
+                    <span className="font-semibold">Ongoing Support:</span> We’re here to assist you long
                     after your project is complete.
                   </li>
                 </ul>
@@ -435,7 +434,7 @@ const AboutUs = () => {
                 className=""
               />
 
-              <h2 className="text-[25px]! font-bold! pt-10! pb-8! leading-[35px]! text-[#FFFFFF]">
+              <h2 className="text-[35px]! font-bold! pt-10! pb-8! leading-[35px]! text-[#FFFFFF]">
                 {" "}
                 Integrity
               </h2>
@@ -452,7 +451,7 @@ const AboutUs = () => {
                 className=""
               />
 
-              <h2 className="text-[25px]! font-bold! pt-10! pb-8! leading-[35px]! text-[#FFFFFF]">
+              <h2 className="text-[35px]! font-bold! pt-10! pb-8! leading-[35px]! text-[#FFFFFF]">
                 {" "}
                 Innovation{" "}
               </h2>
@@ -469,7 +468,7 @@ const AboutUs = () => {
                 className=""
               />
 
-              <h2 className="text-[25px]! font-bold! pt-10! pb-8! leading-[35px]! text-[#FFFFFF]">
+              <h2 className="text-[35px]! font-bold! pt-10! pb-8! leading-[35px]! text-[#FFFFFF]">
                 {" "}
                 Excellence
               </h2>
@@ -486,7 +485,7 @@ const AboutUs = () => {
         <Container>
           <Row>
             <Col>
-              <h2 className="text-[35px]! font-bold! pb-3  flex items-center gap-4">
+              <h2 className="text-[35px]! text-[#FFFFFF]! leading-[40px]!  font-bold! pb-3  flex items-center gap-4">
                 <Image
                   width={44}
                   height={44}
@@ -496,7 +495,7 @@ const AboutUs = () => {
                 />
                 Ready, Set, Go!
               </h2>
-              <p className="text-[20px]! pb-5 text-[#FFFFFF] leading-[28px]! max-[400px]:text-[20px]! max-[400px]:text-center!">
+              <p className="text-[20px]! font-medium pb-[42px]!  max-[767px]:mt-[13px]! text-[#FFFFFF] leading-[28px]! max-[400px]:text-[20px]! max-[400px]:text-center!">
                 Beyond marketing, we’re your trusted partner in growth. <br />
                 At WhoppingSEO, we’re dedicated to helping businesses achieve
                 their online goals through personalized, results-driven
@@ -508,14 +507,14 @@ const AboutUs = () => {
               <div className="flex border-b pb-4 border-[#FFFFFF87] max-[767px]:flex-col">
                 <div className="w-1/3 p-10 flex flex-col gap-3 py-2 px-1 max-[400px]:px-3!  items-start justify-start max-[767px]:w-full ">
                   <Image
-                    width={60}
-                    height={80}
+                    width={81}
+                    height={81}
                     src={`/whoppingreact/about/go/img1.png`}
                     alt=""
-                    className=""
+                   className="min-h-[81px]! min-w-[81px]!"
                   />
 
-                  <h2 className="text-[25px]! font-bold! max-w-[100%]!">
+                  <h2 className="text-[20px]! text-[#FFFFFF] leading-[22px]! font-bold! mt-[27px]!">
                     {" "}
                     Our Diverse Team, Your Success{" "}
                   </h2>
@@ -534,14 +533,14 @@ const AboutUs = () => {
                             "
                 >
                   <Image
-                    width={60}
-                    height={80}
+                    width={81}
+                    height={81}
                     src={`/whoppingreact/about/go/img2.png`}
                     alt=""
-                    className=""
+                     className="min-h-[81px]! min-w-[81px]!"
                   />
 
-                  <h2 className="text-[25px]! font-bold! ">
+                  <h2 className="text-[20px]! text-[#FFFFFF] leading-[22px]! font-bold! mt-[27px]!">
                     {" "}
                     Embracing Innovation for a Better Tomorrow.
                   </h2>
@@ -556,14 +555,14 @@ const AboutUs = () => {
 
                 <div className="w-1/3 p-10 flex flex-col gap-3 py-2 px-3 max-[400px]:px-3! items-start justify-start max-[767px]:w-full ">
                   <Image
-                    width={60}
-                    height={80}
+                    width={81}
+                    height={81}
                     src={`/whoppingreact/about/go/img3.png`}
                     alt=""
-                    className=""
+                     className="min-h-[81px]! min-w-[81px]!"
                   />
 
-                  <h2 className="text-[25px]! font-bold!">
+                  <h2 className="text-[20px]! text-[#FFFFFF] leading-[22px]! font-bold! mt-[27px]!">
                     {" "}
                     Beyond Website Development.
                   </h2>

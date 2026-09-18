@@ -151,7 +151,7 @@ const Servies = () => {
       text: "Startups & Enterprises",
       icon: `/whoppingreact/seo/btn/img7.png`,
     },
-        {
+    {
       text: "Restaurant",
       icon: `/whoppingreact/seo/btn/img8.png`,
     },
@@ -179,18 +179,32 @@ const Servies = () => {
                 {/* <div className="inline-flex mt-5 h-[44px]  items-center rounded-full bg-[#082359] border border-[#FFFFFF] px-4 py-1.5 text-xs md:text-sm text-[#FFFFFF] font-medium">
                 Measurable Results
               </div> */}
-                <div className="max-[767px]:mb-3  mt-5 max-[400px]:pt-12 max-[767px]:flex max-[767px]:justify-center">
-                  <div className="border mb-[30px]! w-max! border-white font-[16px]! text-[#FFFFFF]  tracking-wide uppercase max-[400px]:py-3! px-4 py-2 rounded-full bg-[#082359] backdrop-blur-sm">
-                    Measurable Results{" "}
+                <div className="mt-5 max-[767px]:mb-3 max-[400px]:pt-10 max-[767px]:flex max-[767px]:w-full max-[767px]:justify-center">
+                  <div className="border border-white font-[16px]! text-[#FFFFFF] tracking-wide uppercase max-[400px]:py-3! px-4 py-2 rounded-full bg-[#082359] backdrop-blur-sm mb-[30px]! w-max!">
+                    Measurable Results
                   </div>
                 </div>
                 {/* Heading */}
-                <h2 className="text-[45px]! text-[#FFFFFF]! font-bold! leading-[55px]! flex flex-wrap">
+                <h2
+                  className="
+    text-[45px]!
+    text-[#FFFFFF]!
+    font-bold!
+    leading-[55px]!
+    flex
+    flex-wrap
+    max-[767px]:text-[40px]!
+    max-[400px]:pt-6!
+    max-[767px]:leading-[50px]!
+    max-[767px]:justify-center
+    max-[767px]:text-center
+  "
+                >
                   We don’t just deliver services
                   <span className="text-[#1A98FF]">
                     We deliver measurable growth.
                   </span>
-                </h2>{" "}
+                </h2>
                 {/* Description */}
                 <p
                   className="
@@ -199,10 +213,10 @@ const Servies = () => {
     leading-[22px]!
     text-[#FFFFFF]
     max-w-xl
-
     max-[767px]:mt-3
     max-[767px]:max-w-[90%]
     max-[767px]:mx-auto
+    max-[400px]:mt-[27px]!
     max-[767px]:text-center
     max-[767px]:!text-[18px]
     max-[767px]:!leading-[22px]
@@ -214,10 +228,11 @@ const Servies = () => {
                   performance, scalability, and long-term success.
                 </p>
                 {/* CTA Button */}
-                <button className="!flex mt-[40px]! mb-5 !h-[60px] w-[204px]! !items-center !justify-center !gap-2 !rounded-full !border !border-white/40 !bg-transparent !px-6 !text-[16px] !font-bold !text-[#000000] bg-[#B1DCFF]! !whitespace-nowrap">
+                <button className="!flex mt-[40px]! mb-5 !h-[60px] w-[204px]! !items-center !justify-center !gap-2 !rounded-full !border !border-white/40 !bg-transparent !px-6 !text-[16px] !font-bold !text-[#000000] bg-[#B1DCFF]! !whitespace-nowrap max-[767px]:!mx-auto">
                   Start Your Journey
-                  <span className="!flex !h-[26px] !w-[26px] !items-center !justify-center">
-                    ↗
+                  <span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">
+                    {" "}
+                    ↗ 
                   </span>
                 </button>
               </div>
@@ -226,9 +241,9 @@ const Servies = () => {
             {/* Right Graphic/Image Column */}
             <Col
               lg={5}
-              className="d-flex justify-content-center align-items-center"
+              className="d-flex justify-content-center align-items-center max-[767px]:!mt-0"
             >
-              <div className="relative w-full max-w-[500px] aspect-[500/448] rounded-xl overflow-hidden">
+              <div className="relative w-full max-w-[500px] aspect-[500/448] rounded-xl overflow-hidden max-[767px]:!h-[275px] max-[767px]:!aspect-auto">
                 <Image
                   src="/whoppingreact/Home/serviesright.png"
                   alt="Measurable Growth Illustration"
@@ -243,15 +258,15 @@ const Servies = () => {
         </Container>
       </div>
 
-      <div className="bg-black!">
+      <div className="!bg-black mt-[110px]! max-[767px]:mt-[95px]!">
         <Container>
           <Row>
             <Col>
               {/* ===== NEW SECTION START ===== */}
-              <div className="w-full bg-transparent mt-[120px] relative z-10">
+              <div className="w-full bg-transparent relative z-10">
                 {/* Top Box */}
 
-                <div className=" backdrop-blur-md rounded-[20px]! overflow-hidden  z-9 bg-[linear-gradient(146.49deg,_rgba(17,58,146,0.81)_5.13%,_rgba(44,12,65,0.81)_96.71%)]">
+                <div className="backdrop-blur-md rounded-[20px]! overflow-hidden z-9 bg-[linear-gradient(146.49deg,_rgba(17,58,146,0.81)_5.13%,_rgba(44,12,65,0.81)_96.71%)] max-[767px]:mx-[15px]!">
                   <Image
                     src={`/whoppingreact/Home/serviesH.png`}
                     alt="Background"
@@ -268,7 +283,7 @@ const Servies = () => {
                     ].map((item, index) => (
                       <div
                         key={index}
-                        className="bg-[#06183D4F] text-[20px]! text-[#FFFFFF]! border border-white/10! px-4 py-2 rounded-full text-sm md:text-base"
+                        className="bg-[#06183D4F] text-[20px]! text-[#FFFFFF]! border border-white/10 px-4! py-2! rounded-full max-[767px]:text-[16px]! max-[767px]:text-center!  "
                       >
                         {item}
                       </div>
@@ -302,7 +317,7 @@ const Servies = () => {
                     </div>
 
                     {/* Text */}
-                    <div className="flex flex-wrap justify-center lg:justify-end gap-4 text-[18px]! font-normal  text-[#fffffF]">
+                    <div className="flex flex-wrap justify-center lg:justify-end gap-4 text-[18px]! font-normal text-[#FFFFFF]! max-[767px]:flex-col! max-[767px]:items-center! max-[767px]:gap-1! ">
                       <span>Proven Result</span>
                       <span>Experienced Team</span>
                       <span>Affordable Pricing</span>
@@ -311,7 +326,7 @@ const Servies = () => {
                 </div>
 
                 {/* Company Logos */}
-                <div className="mt-[120px]! w-full overflow-hidden">
+                <div className="mt-[110px]! max-[767px]:mt-[95px]! w-full overflow-hidden">
                   <div className="w-full overflow-hidden">
                     <div className="flex w-max items-center gap-[37px] animate-logo-slide-service">
                       {/* First Logos */}
@@ -382,19 +397,19 @@ const Servies = () => {
         </Container>
       </div>
 
-      <div className="mt-[120px] ">
+      <div className="mt-[110px]! max-[767px]:mt-[95px]! ">
         <Container>
           <Row>
             <Col>
-              <h2 className="text-[35px]! font-bold! text-[#FFFFFF] py-4">
+              <h2 className="text-[35px]! font-bold! text-[#FFFFFF] py-4 max-[767px]:text-center!">
                 Our Proven Process for Digital Success
               </h2>
 
-              <p className="text-[16px]! mt-[25px]! text-[#FFFFFF]">
+              <p className="text-[16px]! mt-[25px]! text-[#FFFFFF]  max-[767px]:text-center!">
                 We follow a structured and transparent process to ensure
                 consistent results:
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 mt-[66px]! bg-black!  lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 mt-[66px]! bg-black!  lg:grid-cols-3 gap-6 max-[767px]:mx-[15px]! max-[767px]:mt-[64px]!">
                 {makeUsApart.map((item) => (
                   <div
                     key={item.id}
@@ -434,33 +449,36 @@ const Servies = () => {
         </Container>
       </div>
 
-      <div className="ourDigitelMarketing mt-[120px]!">
+      <div className="ourDigitelMarketing mt-[110px]! max-[767px]:mt-[95px]! max-[767px]:mx-[10px]!">
         <Container>
           <Row>
             <Col>
-              <section className="HoemAboutus">
+              <section className="HoemAboutus ">
                 <div className=" imagePointSection">
-                  <div className="leftSide">
+                  <div className="leftSide ">
                     <Image
                       src={`/whoppingreact/ser/img1.png`}
                       alt=""
                       width={1000}
                       height={1000}
-                      className="w-full h-[100%]!"
+                      className="w-full h-[100%]! max-[767px]:h-[300px]! max-[767px]:object-contain!"
                     />
                   </div>
-                  <div className="digital-back text-white">
-                    <h2 className="text-[35px]! font-bold! text-white py-0">
+                  <div className="digital-back text-white max-[767px]:mx-[10px]! max-[767px]:mt-[20px]!">
+                    <h2 className="text-[35px]!  font-bold! text-white py-0 max-[767px]:text-center! max-[767px]:text-[32px]! max-[767px]:leading-[40px]!">
                       We provide tailored digital marketing solutions across
                       various industries:
                     </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-[767px]:mt-[20px]!">
                       {btnArry.map((item, index) => (
-                        <div key={index} className="w-full">
-                    <button
-                      type="button"
-                      className="
+                        <div
+                          key={index}
+                          className="w-full max-[767px]:flex! max-[767px]:justify-center!"
+                        >
+                          <button
+                            type="button"
+                            className="
                         flex
                         min-h-[77px]!
                         min-w-[269px]!
@@ -474,14 +492,14 @@ const Servies = () => {
                         px-[10px]
                         py-[8px]
                         text-left
-                        text-white
+                        text-[#FFFFFF]
                         transition-all
                         duration-200
                         hover:bg-[#1b0808]!
 
                         max-[767px]:min-h-[48px]
                       "
-                    >
+                          >
                             <Image
                               src={item.icon}
                               alt={item.icon}
@@ -497,7 +515,7 @@ const Servies = () => {
                         </div>
                       ))}
                     </div>
-                    <p className="text-[18px]! mt-[29px]!">
+                    <p className="text-[18px]! mt-[29px]! text-[#FFFFFF]! max-[767px]:text-center! max-[767px]:text-[16px]!">
                       No matter your industry, we understand your audience and
                       craft strategies that deliver results.
                     </p>
@@ -509,11 +527,16 @@ const Servies = () => {
         </Container>
       </div>
 
-      <div className="whatiswhoping! mt-[110px]!">
+      <div
+        className="whatiswhoping  max-[767px]:mx-[10px]! mt-[110px]! mb-[110px]! max-[767px]:mt-[95px]!  max-[767px]:mb-[95px]! "
+     
+        style={{ backgroundColor: "#111111" }}
+      >
+        {" "}
         <Container>
           <Row>
             <Col>
-              <h2 className="text-[35px]! font-bold! text-white py-4">
+              <h2 className="text-[35px]! font-bold! text-[#FFFFFF] py-4 leading-[45px]! max-[767px]:text-center!">
                 As a leading digital marketing agency in
                 <span className="text-[#1A98FF]"> the USA, Whopping SEO </span>
                 specializes in crafting effective site 
@@ -521,41 +544,44 @@ const Servies = () => {
                 that deliver exceptional ROI.
               </h2>
               <section className="HoemAboutus">
-                <div className="noArea   gap-6 items-center justify-between flex-wrap   py-4 px-12 ">
-                  <div className="flex flex-wrap lg:flex-nowrap justify-between items-center">
-                    <div className="numberDiv flex flex-col py-4 z-10 bg-[17171754] ">
-                      <span className="no text-[#1A98FF] z-40 bg-[#17171754]">
-                        500+
-                      </span>
-                      <span className="notext z-40 max-w-[180px]! bg-[#17171754]">
-                        Businesses Grown Across USA
-                      </span>
-                    </div>
-                    <div className="numberDiv flex flex-col py-4">
-                      <span className="no text-[#1A98FF] z-40 bg-[#17171754]">
-                        3x
-                      </span>
-                      <span className="notext max-w-[180px]! z-40 bg-[#17171754]">
-                        Average Map Pack visibility increase
-                      </span>
-                    </div>
-                    <div className="numberDiv flex flex-col py-4">
-                      <span className="no text-[#1A98FF] z-40 bg-[#17171754]">
-                        90
-                      </span>
-                      <span className="notext z-40 max-w-[180px]! bg-[#17171754]">
-                        Days to first ranking improvements
-                      </span>
-                    </div>
-                    <div className="numberDiv flex flex-col py-4">
-                      <span className="no text-[#1A98FF] z-40 bg-[#17171754]">
-                        98%
-                      </span>
-                      <span className="notext z-40 max-w-[180px]! bg-[#17171754]">
-                        Client retention rate
-                      </span>
-                    </div>
-                  </div>
+                <div className="noArea py-8! items-center justify-between flex-wrap px-12 max-[767px]:py-8! ">
+                 <div className="flex flex-wrap lg:flex-nowrap justify-between items-center max-[767px]:!flex-col max-[767px]:!gap-4">
+  <div className="numberDiv flex flex-col py-1! z-10 bg-[#17171754] max-[767px]:!mt-[25px] max-[767px]:!items-center">
+    <span className="no text-[55px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
+      500+
+    </span>
+    <span className="notext text-[18px]! text-[#FFFFFF] z-40 max-w-[180px]! bg-[#17171754] max-[767px]:!text-center">
+      Businesses Grown Across USA
+    </span>
+  </div>
+
+  <div className="numberDiv flex flex-col py-1! max-[767px]:!mt-[25px] max-[767px]:!items-center">
+    <span className="no text-[55px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
+      3x
+    </span>
+    <span className="notext text-[18px]! text-[#FFFFFF] max-w-[180px]! z-40 bg-[#17171754] max-[767px]:!text-center">
+      Average Map Pack visibility increase
+    </span>
+  </div>
+
+  <div className="numberDiv flex flex-col py-1! max-[767px]:!mt-[25px] max-[767px]:!items-center">
+    <span className="no text-[55px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
+      90
+    </span>
+    <span className="notext text-[18px]! text-[#FFFFFF] z-40 max-w-[180px]! bg-[#17171754] max-[767px]:!text-center">
+      Days to first ranking improvements
+    </span>
+  </div>
+
+  <div className="numberDiv flex flex-col py-1! max-[767px]:!mt-[25px] max-[767px]:!items-center">
+    <span className="no text-[55px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
+      98%
+    </span>
+    <span className="notext text-[18px]! text-[#FFFFFF] z-40 max-w-[180px]! bg-[#17171754] max-[767px]:!text-center">
+      Client retention rate
+    </span>
+  </div>
+</div>
                 </div>
               </section>
             </Col>
@@ -565,25 +591,25 @@ const Servies = () => {
 
       {/* ================= TOOLS & TECHNOLOGIES SECTION ================= */}
 
-      <div className="py-[4rem]  border-[#1A62FF33] bg-[linear-gradient(90deg,_#07133D_0%,_#0B0320_100%)]">
+      <div className="border-[#1A62FF33] bg-[linear-gradient(90deg,_#07133D_0%,_#0B0320_100%)]">
         <Container>
           <Row>
             <Col>
-              <div className="relative overflow-hidden  px-6 py-16 text-center">
+              <div className="relative overflow-hidden  px-6 py-10 text-center">
                 {/* Heading */}
-                <h2 className="text-white text-[35px]! font-extrabold! md:text-[41px] leading-[1.3]">
+                <h2 className="text-[#FFFFFF] text-[35px]! font-extrabold! md:text-[41px]! leading-[1.3]">
                   Powered by Advanced{" "}
                   <span className="text-[#1A98FF]">Tools & Technologies</span>
                 </h2>
 
                 {/* Sub Heading */}
-                <p className="text-[#B8B8B8] text-[16px]! mt-4 mb-10">
+                <p className="text-[#FFFFFF] text-[16px]! mt-2 mb-10 leading-20! max-[767px]:mt-[27px]! max-[767px]:leading-[20px]!">
                   We use industry-leading tools to ensure accuracy, efficiency,
                   and results:
                 </p>
 
                 {/* Tools Buttons */}
-                <div className="flex flex-wrap justify-center gap-4  mx-auto mt-[4rem]">
+                <div className="flex flex-wrap justify-center gap-4 mx-auto mt-[63px]!  max-[767px]:mt-[38px]! ">
                   {[
                     "Google Analytics & Search Console",
                     "SEMrush / Ahrefs",
@@ -593,7 +619,7 @@ const Servies = () => {
                   ].map((item, index) => (
                     <button
                       key={index}
-                      className={`px-7 py-3 rounded-full! border! border-[#FFFFFF9C]! text-white text-[16px] transition-all duration-300
+                      className={`px-6 py-3 rounded-full! border!  border-[#FFFFFF9C]! text-[#FFFFFF] text-[16px] transition-all duration-300
                 hover:bg-[#1A98FF]
                   `}
                     >
@@ -607,13 +633,13 @@ const Servies = () => {
         </Container>
       </div>
 
-      <div className="ourDigitelMarketing  bg-black  !py-[6rem]">
+      <div className="ourDigitelMarketing  bg-black mt-[110px]! max-[767px]:mt-[95px]! max-[767px]:mx-[10px]!">
         <Container>
           <Row>
             <Col>
               <section className="HoemAboutus">
                 <div className=" imagePointSection">
-                  <div className="leftSide">
+                  <div className="leftSide ">
                     <Image
                       src={`/whoppingreact/Home/bussnessM.png`}
                       alt=""
@@ -630,16 +656,16 @@ const Servies = () => {
                       className="imgeSmall"
                     />
                   </div>
-                  <div className="bg-black text-white">
+                  <div className="bg-black text-[#FFFFFF]">
                     <div className="textArea">
-                      <h2 className="MainHeading font-extrabold!">
+                      <h2 className="MainHeading text-[35px]! font-extrabold! max-[767px]:text-center!">
                         Ready to Grow Your Business Online?
                       </h2>
-                      <span className="!para mt-8 flex flex-col">
+                      <span className="!para mt-7 flex flex-col max-[767px]:mt-30px! max-[767px]:text-center!">
                         <p className="text-[16px]! pb-1">
                           Let’s turn your ideas into measurable success.
                         </p>
-                        <p className="text-[16px]! pb-8 font-normal!">
+                        <p className="text-[16px]! font-normal! max-[767px]:mt-30px! max-[767px]:text-center!">
                           Whether you`re looking to increase traffic, generate
                           leads, or boost sales — we have the expertise to make
                           it happen.
@@ -651,7 +677,7 @@ const Servies = () => {
                         key={item.id}
                         className={`p-4! pl-0! border-b border-gray-700 cursor-pointer
                           flex justify-start items-center align-middle gap-2!
-                          
+                           max-[767px]:mt-50px!
                           transition-all duration-300`}
                       >
                         <span className="imgeDiv">
@@ -669,9 +695,45 @@ const Servies = () => {
                         </span>
                       </div>
                     ))}
-                    <button className="bg-[linear-gradient(90deg,_#1B51CC_0%,_#2B0E66_100%)] mt-15! hover:opacity-90 transition-all px-8 py-3 !rounded-full text-white font-medium">
-                      Let’s Build Something Great Together
-                    </button>
+
+<button
+  className="
+    flex
+    mt-[40px]!
+    mb-5
+    h-[60px]!
+    w-[364px]!
+    max-[767px]:!max-w-[364px]
+    max-[767px]:!mx-auto
+    !items-center
+    justify-center
+    gap-2!
+    rounded-full!
+    !border
+    !border-white/40
+    !bg-transparent
+    !px-6
+    text-[16px]!
+    font-bold!
+    !text-[#000000]
+    bg-[#B1DCFF]!
+    whitespace-nowrap!
+    max-[767px]:!whitespace-normal
+  "
+>
+  <span className="max-[767px]:!text-center">
+    Let’s Build Something
+    <br className="max-[767px]:!block hidden" />
+    Great Together
+  </span>
+
+  <span className="!flex !h-[26px] !w-[26px] !min-w-[26px] !items-center !justify-center">
+    ↗
+  </span>
+</button>
+                    {/* <button className="bg-[linear-gradient(90deg,_#1B51CC_0%,_#2B0E66_100%)] mt-15! hover:opacity-90 transition-all px-8 py-3 !rounded-full text-white font-medium">
+                     
+                    </button> */}
                   </div>
                 </div>
               </section>
@@ -680,22 +742,22 @@ const Servies = () => {
         </Container>
       </div>
 
-      <div className="Faq  bg-black  !pb-[6rem]">
+      <div className="Faq  mt-[110px]! mb-[110px]!  max-[767px]:mt-[95px]!  max-[767px]:mb-[95px]! ">
         <Container>
           <Row>
             <Col>
               <div className="HoemAboutus">
                 <div className="textArea flex flex-col item-center justify-center">
-                  <h2 className="MainHeading text-center font-black!">
+                  <h2 className="MainHeading text-center font-black! text-[#FFFFFF]">
                     Frequently Asked Questions
                   </h2>
-                  <span className="!para mt-6 flex flex-col">
+                  {/* <span className="!para mt-6 flex flex-col">
                     <p className="text-center ">
                       Everything you need to know before getting started.
                     </p>
-                  </span>
+                  </span> */}
                 </div>
-                <div className="bg-black py-5">
+                <div className="bg-black mt-[60px]!">
                   <Container>
                     {/* FAQ Column */}
                     <Row className="justify-content-center">
@@ -720,7 +782,7 @@ const Servies = () => {
                                     Q.{index + 1}
                                   </span>
 
-                                  <span className="text-[15px] text-gray-200">
+                                  <span className="text-[15px] text-[#FFFFFF]! text-gray-200">
                                     {faq.question}
                                   </span>
                                 </div>
