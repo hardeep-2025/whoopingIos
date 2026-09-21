@@ -33,11 +33,11 @@ const AboutUs = () => {
         <Container>
           <Row>
             <Col className="flex items-end justify-end z-10 w-full">
-              <section className="bannerSection relative w-full h-screen max-[767px]:h-auto flex flex-col justify-center text-white z-20 pb-32  max-[767px]:items-center max-[767px]:pt-8">
+              <section className="bannerSection relative w-full h-screen max-[767px]:h-auto flex flex-col justify-center text-white z-20 pb-32  max-[767px]:items-center max-[767px]:mt-[95px]!">
                 {/* Content wrapper - constrained width on desktop, full on mobile */}
                 <div className="max-w-[640px]  mt-[66px]!  max-[767px]:max-w-full w-full px-4 max-[767px]:px-0 max-[767px]:text-center">
                   {/* Badge */}
-                  <div className="max-[767px]:mb-3  max-[400px]:pt-12 max-[767px]:flex max-[767px]:justify-center">
+                  <div className="max-[767px]:mb-3  max-[767px]:pt-8 max-[767px]:flex max-[767px]:justify-center">
                     <div className="border mb-[30px]! w-max! border-white font-[16px]! text-[#FFFFFF]  tracking-wide uppercase max-[400px]:py-3! px-4 py-2 rounded-full bg-[#082359] backdrop-blur-sm">
                       Digital Marketing Agency
                     </div>
@@ -55,8 +55,6 @@ const AboutUs = () => {
     max-[767px]:!text-[40px]
     max-[767px]:!leading-[36px]
     max-[767px]:text-center
-    max-[400px]:!text-[38px]
-    max-[400px]:!leading-[32px]
     max-[400px]:!mt-6
   "
                     >
@@ -69,21 +67,21 @@ const AboutUs = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="mt-4 text-[18px]! max-[767px]:mt-3 text-[#FFFFFF] max-w-xl max-[767px]:max-w-[90%] max-[767px]:mx-auto max-[767px]:!text-[18px] max-[767px]:!leading-[24px]">
+                  <p className="mt-4 text-[18px]!  leading-[28px]! max-[767px]:leading-[28px]! font-medium!  max-[767px]:mt-[32px]! max-[767px]:mt-3 text-[#FFFFFF]  max-[767px]:max-w-[90%] max-[767px]:mx-auto max-[767px]:text-[18px]!">
                     Data Driven Strategies and innovative Solutions that grow
                     Your Brand, Attract the Right Audience, And Deliver
                     Measurable Result.
                   </p>
 
                   {/* Buttons */}
-                  <div className="!mt-[54px] !flex !flex-row !items-start !gap-4 pb-1 max-[767px]:!mt-5 max-[767px]:!flex-col max-[767px]:!items-center max-[767px]:!justify-center max-[767px]:!gap-3">
-                    <button className="!flex !h-[44px] w-[210px]! !items-center !justify-center !gap-2 !rounded-full !bg-[#c9e6ff] !px-6 !text-[16px] !font-bold !text-[#000000] !whitespace-nowrap">
+                  <div className="mt-[54px]! flex! !flex-row !items-start gap-4! pb-1 max-[767px]:mt-[46px]! max-[767px]:!flex-col max-[767px]:!items-center max-[767px]:!justify-center max-[767px]:gap-5!">
+                    <button className="!flex h-[60px]! w-[210px]! !items-center !justify-center !gap-2 !rounded-full !bg-[#B1DCFF] !px-6 !text-[16px] !font-bold !text-[#000000] !whitespace-nowrap">
                       Get Started Now
 <span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">                        ↗
                       </span>
                     </button>
 
-                    <button className="!flex !h-[44px] w-[210px]! !items-center !justify-center !gap-2 !rounded-full !border !border-white/40 !bg-transparent !px-6 !text-[16px] !font-bold !text-[#FFFFFF] !whitespace-nowrap">
+                    <button className="!flex h-[60px]! w-[210px]! !items-center !justify-center !gap-2 !rounded-full !border !border-white/40 !bg-transparent !px-6 text-[16px]! !font-bold !text-[#FFFFFF] !whitespace-nowrap">
                       See Our Services
                       <span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">                        
                         ↗
@@ -113,7 +111,7 @@ const AboutUs = () => {
     max-[767px]:static
     max-[767px]:left-0
     max-[767px]:translate-x-0
-    max-[767px]:!-mt-20
+    max-[767px]:-mt-[80px]!
     max-[767px]:px-6
   "
       >
@@ -186,7 +184,7 @@ const AboutUs = () => {
                 className="
             flex
             items-center
-          gap-[13px]
+          gap-[15px]!
             px-4
             py-3
             flex-1
@@ -264,7 +262,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="bg-black" style={{ marginTop: "120px" }}>
+      <div className="bg-black  max-[767px]:mt-[95px]!" style={{ marginTop: "120px" }}   >
         {" "}
       </div>
       <div className="flex max-[767px]:flex-col">
@@ -274,7 +272,7 @@ const AboutUs = () => {
             height={400}
             src={`/whoppingreact/about/blackbg2.png`}
             alt=""
-            className="w-full h-full -z-20"
+  className="w-full h-full -z-20 max-[767px]:w-[393px]! max-[767px]:h-[450px]!"
           />
         </div>
         <div
@@ -291,14 +289,14 @@ const AboutUs = () => {
           </span>
 
           {/* Heading */}
-          <div className="flex flex-col text-[55px] text-[#FFFFFF] w-full font-weight-400 leading-[70px]! mt-7!">
+          <div className="flex flex-col text-[55px]! max-[767px]:text-[50px]!  text-[#FFFFFF] w-full font-weight-400 leading-[70px]! mt-7!">
             <span className="text-left">Things</span>
             <span className="text-center">Creative</span>
             <span>Everyday</span>
           </div>
 
           {/* 19px gap from heading */}
-          <span className="text-[16px] text-[#FFFFFF] font-medium! leading-[18px]! mt-[19px]!">
+          <span className="text-[16px] text-[#FFFFFF] font-medium! leading-[18px]! mt-[19px]! max-[767px]:mt-[25px]!">
             At Whopping React, we believe every business deserves a digital
             presence that delivers real value. Our experienced team specializes
             in web development, mobile app development, UI/UX design, and
@@ -315,7 +313,9 @@ const AboutUs = () => {
             height={400}
             src={`/whoppingreact/about/blackbg1.png`}
             alt=""
-            className="w-full h-full"
+     
+              className="w-full h-full -z-20 max-[767px]:w-[393px]! max-[767px]:h-[417px]!"
+
           />
         </div>
       </div>
@@ -348,7 +348,7 @@ const AboutUs = () => {
                 className="
             text-[35px]!
             max-[400px]:text-center!
-            max-[400px]:mt-6!
+            max-[767px]:mt-6!
             font-bold!
             leading-[40px]!
             text-[#FFFFFF]!
@@ -357,43 +357,32 @@ const AboutUs = () => {
                 WhoppingSEO: Your Partner in Digital Success
               </h2>
 
-              <div className="text-[18px] leading-[22px]! text-[#FFFFFF]! max-[400px]:text-center">
+              <div className="text-[18px]  max-[767px]:mt-[32px]! leading-[22px]! text-[#FFFFFF]! max-[400px]:text-center">
                 <p>
-                  At WhoppingSEO, we’re more than just a digital agency. Our
-                  team of marketing experts, designers, and developers is
-                  dedicated to driving business success in the digital world.
-                  Our focus is on results-driven strategies that directly impact
-                  your bottom line. We measure success not just by website
-                  traffic, but by the tangible outcomes—increased leads, higher
-                  conversions, and substantial revenue growth.
+                At WhoppingSEO, we help businesses grow through SEO, AI SEO, Local SEO, PPC, content marketing, social media, and AI search optimization. Our results-driven strategies focus on improving visibility, generating qualified leads, increasing conversions, and driving sustainable revenue growth.
                 </p>
 
                 <p className="font-[800] mt-[25px]!">Why choose WhoppingSEO?</p>
 
                 <ul className="mt-[10px] pl-0! list-none space-y-1 px-0! text-[17px]!">
                   <li>
-                    <span className="font-semibold">Proven Expertise:</span> Our team’s track record
-                    speaks for itself.
+                    <span className="font-semibold">Proven Expertise :</span>Our team brings practical experience and industry knowledge
                   </li>
 
                   <li>
-                    <span className="font-semibold">Results-Oriented Approach:</span> We’re committed to
-                    delivering measurable outcomes.
+                    <span className="font-semibold">Results-Oriented Approach :</span> We focus on strategies that deliver measurable business outcomes.
                   </li>
 
                   <li>
-                    <span className="font-semibold">Client-Centric Focus:</span> Your success is our
-                    priority.
+                    <span className="font-semibold">Client-Centric Focus :</span> Your goals and growth remain at the heart of our strategy.
                   </li>
 
                   <li>
-                    <span className="font-semibold">Comprehensive Solutions:</span> From website design to
-                    SEO and marketing, we offer a full suite of services.
+                    <span className="font-semibold">Comprehensive Solutions :</span>  From SEO and Local SEO to PPC, content, and AI search, we provide solutions designed for modern businesses.
                   </li>
 
                   <li>
-                    <span className="font-semibold">Ongoing Support:</span> We’re here to assist you long
-                    after your project is complete.
+                    <span className="font-semibold">Ongoing Support :</span> We continuously monitor performance, identify opportunities, and refine strategies for long-term growth.
                   </li>
                 </ul>
               </div>
@@ -406,20 +395,24 @@ const AboutUs = () => {
         <Container>
           <Row>
             <Col>
-              <h2
-                className="
-      text-[35px]!
-      uppercase
-      max-[400px]:text-center!
-      font-bold!
-      leading-[105px]!
-      max-[400px]:leading-[45px]!
-      pb-[2rem]!
-      text-[#FFFFFF]!
-    "
-              >
-                Our Core Values:
-              </h2>
+            <h2
+  className="
+    text-[35px]!
+    uppercase
+    font-bold!
+    leading-[105px]!
+    pb-[2rem]!
+    text-[#FFFFFF]!
+    max-[776px]:max-w-[300px]
+    max-[776px]:mx-auto
+    max-[776px]:leading-[45px]!
+    max-[776px]:text-center!
+  "
+>
+  Our Core
+  <br className="max-[776px]:block hidden" />
+  Values:
+</h2>
             </Col>
           </Row>
         </Container>
@@ -434,11 +427,11 @@ const AboutUs = () => {
                 className=""
               />
 
-              <h2 className="text-[35px]! font-bold! pt-10! pb-8! leading-[35px]! text-[#FFFFFF]">
+              <h2 className="text-[35px]! font-bold! pt-[39px]! pb-[31px]! leading-[35px]! text-[#FFFFFF]">
                 {" "}
                 Integrity
               </h2>
-              <p className="text-[14px]! font-semibold text-center max-w-[220px]!">
+              <p className="text-[14px]! max-[776px]:leading-[18x]! text-[#FFFFFF]! font-semibold text-center max-w-[220px]!">
                 Honesty and transparency are our cornerstones.
               </p>
             </div>
@@ -451,11 +444,11 @@ const AboutUs = () => {
                 className=""
               />
 
-              <h2 className="text-[35px]! font-bold! pt-10! pb-8! leading-[35px]! text-[#FFFFFF]">
+              <h2 className="text-[35px]! font-bold! pt-[39px]! pb-[31px]! leading-[35px]! text-[#FFFFFF]">
                 {" "}
                 Innovation{" "}
               </h2>
-              <p className="text-[14px]! font-semibold text-center max-w-[220px]!">
+              <p className="text-[14px]!  max-[776px]:leading-[18x]! text-[#FFFFFF]! font-semibold text-center max-w-[220px]!">
                 We’re always one step ahead with innovative solutions.
               </p>
             </div>
@@ -468,11 +461,11 @@ const AboutUs = () => {
                 className=""
               />
 
-              <h2 className="text-[35px]! font-bold! pt-10! pb-8! leading-[35px]! text-[#FFFFFF]">
+              <h2 className="text-[35px]! font-bold! pt-[39px]! pb-[31px]! leading-[35px]! text-[#FFFFFF]">
                 {" "}
                 Excellence
               </h2>
-              <p className="text-[14px]! font-semibold text-center">
+              <p className="text-[14px]! max-[776px]:leading-[18x]! text-[#FFFFFF]! font-semibold text-center">
                 Excellence is our unwavering pursuit.Ready to take your business
                 to new heights?
               </p>
@@ -485,16 +478,35 @@ const AboutUs = () => {
         <Container>
           <Row>
             <Col>
-              <h2 className="text-[35px]! text-[#FFFFFF]! leading-[40px]!  font-bold! pb-3  flex items-center gap-4">
-                <Image
-                  width={44}
-                  height={44}
-                  src={`/whoppingreact/about/bluetick.png`}
-                  alt=""
-                  className=""
-                />
-                Ready, Set, Go!
-              </h2>
+             <h2
+  className="
+    text-[35px]!
+    text-[#FFFFFF]!
+    leading-[40px]!
+    font-bold!
+    pb-3
+    flex
+    items-center
+    gap-4
+    max-[776px]:flex-col
+    max-[776px]:justify-center
+    max-[776px]:text-center!
+    max-[776px]:gap-1!
+  "
+>
+  <Image
+    width={44}
+    height={44}
+    src="/whoppingreact/about/bluetick.png"
+    alt=""
+  />
+
+  <span>
+    Ready, Set,
+    <br />
+    Go!
+  </span>
+</h2>
               <p className="text-[20px]! font-medium pb-[42px]!  max-[767px]:mt-[13px]! text-[#FFFFFF] leading-[28px]! max-[400px]:text-[20px]! max-[400px]:text-center!">
                 Beyond marketing, we’re your trusted partner in growth. <br />
                 At WhoppingSEO, we’re dedicated to helping businesses achieve
@@ -505,7 +517,7 @@ const AboutUs = () => {
               </p>
 
               <div className="flex border-b pb-4 border-[#FFFFFF87] max-[767px]:flex-col">
-                <div className="w-1/3 p-10 flex flex-col gap-3 py-2 px-1 max-[400px]:px-3!  items-start justify-start max-[767px]:w-full ">
+                <div className="w-1/3 p-10 flex max-[767px]:py-[61px]! flex-col gap-3 py-2 px-1 max-[400px]:px-3! items-start justify-start max-[767px]:w-full ">
                   <Image
                     width={81}
                     height={81}
@@ -518,7 +530,7 @@ const AboutUs = () => {
                     {" "}
                     Our Diverse Team, Your Success{" "}
                   </h2>
-                  <p className="text-[18px]! font-normal max-w-[100%]! ">
+                  <p className="text-[18px]! leading-[20px]! mt-[24px]! font-normal max-w-[100%]! ">
                     Our team is a vibrant tapestry of individuals, each bringing
                     their own expertise and passion to the table. From seasoned
                     strategists to creative wizards, we’re committed to making
@@ -528,7 +540,7 @@ const AboutUs = () => {
                 </div>
 
                 <div
-                  className="w-1/3 p-10 flex flex-col gap-3 py-2  px-3 max-[400px]:px-3! items-start justify-start border-x border-[#FFFFFF87] max-[767px]:w-full
+                  className="w-1/3 p-10 flex flex-col  max-[767px]:py-[61px]! gap-3 py-2  px-3 max-[400px]:px-3! items-start justify-start border-x border-[#FFFFFF87] max-[767px]:w-full
                             max-[767px]:border-x-0 max-[767px]:border-y
                             "
                 >
@@ -544,7 +556,7 @@ const AboutUs = () => {
                     {" "}
                     Embracing Innovation for a Better Tomorrow.
                   </h2>
-                  <p className="text-[18px]! font-normal! max-w-[100%]! ">
+                  <p className="text-[18px]!  mt-[24px]! leading-[20px]!  font-normal! max-w-[100%]! ">
                     By staying at the forefront of industry trends, we’re able
                     to deliver cutting-edge solutions that help our clients
                     thrive. Our mission extends beyond business; we aim to
@@ -553,7 +565,7 @@ const AboutUs = () => {
                   </p>
                 </div>
 
-                <div className="w-1/3 p-10 flex flex-col gap-3 py-2 px-3 max-[400px]:px-3! items-start justify-start max-[767px]:w-full ">
+                <div className="w-1/3 p-10 flex flex-col  max-[767px]:py-[61px]! gap-3 py-2 px-3 max-[400px]:px-3! items-start justify-start max-[767px]:w-full ">
                   <Image
                     width={81}
                     height={81}
@@ -566,7 +578,7 @@ const AboutUs = () => {
                     {" "}
                     Beyond Website Development.
                   </h2>
-                  <p className="text-[18px]! font-normal! max-w-[100%]!">
+                  <p className="text-[18px]! mt-[24px]!  leading-[20px]! font-normal! max-w-[100%]!">
                     We create more than just websites; we build thriving online
                     businesses. Our comprehensive services go beyond the initial
                     launch. We’ll guide you through every stage of your digital
@@ -579,13 +591,13 @@ const AboutUs = () => {
           </Row>
         </Container>
       </div>
-      <div className="py-[3rem]  max-[400px]:py-[1rem]! bg-black">
+      <div className="mt-[120px]! max-[400px]:py-[1rem]! bg-black">
         <Container>
           <div className="">
-            <h3 className="text-[35px]! font-bold!">
+            <h3 className="text-[35px]! text-[#ffffff]! font-bold!">
               Your Success is Our Success.
             </h3>
-            <p className="text-[18px]! pt-[30px]! pb-[4rem]!">
+            <p className="text-[18px]! pt-[24px]! text-[#ffffff]!">
               At WhoppingSEO, we’re invested in your growth. Your success is our
               ultimate goal. We’re committed to providing exceptional service
               that helps you achieve your business objectives and reach new
@@ -597,9 +609,10 @@ const AboutUs = () => {
             className="
     w-full
     rounded-[16px]
+    mt-[38px]!
     bg-[linear-gradient(146.49deg,_rgba(17,58,146,0.4)_5.13%,_rgba(44,12,65,0.4)_96.71%)]
     px-8
-    py-12
+    py-[38px]!
     max-[767px]:px-4
     max-[767px]:py-8
   "
@@ -846,7 +859,7 @@ const AboutUs = () => {
             className="
     flex items-center justify-between
     w-full
-    pt-[3rem]!
+  mt-[128px]!
     text-[35px]!
     leading-[45px]!
     font-bold!
@@ -858,7 +871,7 @@ const AboutUs = () => {
     max-[767px]:leading-[38px]!
   "
           >
-            <span className="w-full text-center">
+            <span className="w-full text-center  leading-[40px]! text-[#FFFFFF]!">
               “Elevate Your Business <br />
               with WhoppingSEO”
             </span>
@@ -881,8 +894,8 @@ const AboutUs = () => {
 
                 <h2
                   className="
-      !text-[35px]
-      !font-bold
+      text-[35px]!
+      font-bold!
       m-0
       text-[#FFFFFF]
       border-b
@@ -895,9 +908,9 @@ const AboutUs = () => {
               </div>
 
               <p
-                className="!text-[20px] max-[767px]:text-center
-    max-[767px]:!text-[17px]
-    max-[767px]:leading-[26px]  pb-10 text-[#FFFFFF]"
+                className="text-[20px]! font-medium! mt-[26px]!  max-[767px]:text-center
+    max-[767px]:text-[17px]!
+    max-[767px]:leading-[26px]!  pb-10 text-[#FFFFFF]"
               >
                 Reimagining Digital. We’re more than a digital agency; we’re a
                 catalyst for transformation. Our team’s passion for innovation
@@ -947,11 +960,11 @@ const AboutUs = () => {
                       />
                     </div>
 
-                    <h3 className="text-[20px]!  pt-3  text-center font-bold! transition-all duration-500 mb-1!">
+                    <h3 className="text-[20px]!  pt-3! text-[#FFFFFF]  text-center font-bold! transition-all duration-500 mb-1!">
                       Utkarsh Khare
                     </h3>
 
-                    <p className="text-[14px]! pb-3!  text-[#BDBDBD] text-center! group-hover:text-black transition-all duration-500 -mt-4">
+                    <p className="text-[14px]! pb-3!  text-[#FFFFFF] text-center! group-hover:text-black transition-all duration-500 -mt-4">
                       Founder & CEO
                     </p>
                   </div>
@@ -996,11 +1009,11 @@ const AboutUs = () => {
                         alt="Gmail"
                       />
                     </div>
-                    <h3 className="text-[20px]!  pt-3! text-center font-bold! transition-all duration-500 mb-1!">
+                    <h3 className="text-[20px]!  pt-3! text-center text-[#FFFFFF] font-bold! transition-all duration-500 mb-1!">
                       Amit Chouhan
                     </h3>
 
-                    <p className="text-[14px]!  pb-3  text-center text-[#BDBDBD] group-hover:text-black transition-all duration-500">
+                    <p className="text-[14px]!  pb-3  text-center text-[#FFFFFF] group-hover:text-black transition-all duration-500">
                       Digital Marketing Lead
                     </p>
                   </div>
@@ -1046,11 +1059,11 @@ const AboutUs = () => {
                       />
                     </div>
 
-                    <h3 className="text-[20px]! pt-3 text-center font-bold! transition-all duration-500 mb-1!">
+                    <h3 className="text-[20px]! pt-3 text-[#FFFFFF] text-center font-bold! transition-all duration-500 mb-1!">
                       Shikha Vaid
                     </h3>
 
-                    <p className="text-[14px]! pb-3  text-center text-[#BDBDBD] group-hover:text-black transition-all duration-500">
+                    <p className="text-[14px]! pb-3  text-center text-[#FFFFFF] group-hover:text-black transition-all duration-500">
                       Project Manager
                     </p>
                   </div>
