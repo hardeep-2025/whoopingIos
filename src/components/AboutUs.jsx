@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useEffect, useRef,useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
@@ -15,6 +15,67 @@ import { Autoplay } from "swiper/modules";
 const AboutUs = () => {
   const [active, setActive] = useState(1);
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
+
+const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+
+    if (!slider) return;
+
+    let interval;
+
+    const startSlider = () => {
+      // Only run slider on mobile
+      if (window.innerWidth >= 768) return;
+
+      interval = setInterval(() => {
+        if (!slider) return;
+
+        const card = slider.querySelector(".team-card");
+
+        if (!card) return;
+
+        const cardWidth = card.offsetWidth;
+        const gap = 16;
+
+        const maxScroll =
+          slider.scrollWidth - slider.clientWidth;
+
+        // If reached last card, smoothly go back to first
+        if (slider.scrollLeft >= maxScroll - 10) {
+          slider.scrollTo({
+            left: 0,
+            behavior: "smooth",
+          });
+        } else {
+          slider.scrollTo({
+            left: slider.scrollLeft + cardWidth + gap,
+            behavior: "smooth",
+          });
+        }
+      }, 3000);
+    };
+
+    startSlider();
+
+    // Restart when screen size changes
+    const handleResize = () => {
+      clearInterval(interval);
+      startSlider();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+
+
 
   return (
     <div>
@@ -474,7 +535,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="py-[3rem]! max-[767px]:py-[90px]!">
+      <div className="mt-[119px]! max-[767px]:mt-[90px]!">
         <Container>
           <Row>
             <Col>
@@ -503,8 +564,9 @@ const AboutUs = () => {
 
   <span>
     Ready, Set,
-    <br />
-    Go!
+      <br className="max-[776px]:block hidden" />
+
+     Go!
   </span>
 </h2>
               <p className="text-[20px]! font-medium pb-[42px]!  max-[767px]:mt-[13px]! text-[#FFFFFF] leading-[28px]! max-[400px]:text-[20px]! max-[400px]:text-center!">
@@ -591,9 +653,9 @@ const AboutUs = () => {
           </Row>
         </Container>
       </div>
-      <div className="mt-[120px]! max-[400px]:py-[1rem]! bg-black">
+      <div className="mt-[120px]!   max-[767px]:mt-[90px]! bg-black">
         <Container>
-          <div className="">
+          <div className=" max-[767px]:text-center!">
             <h3 className="text-[35px]! text-[#ffffff]! font-bold!">
               Your Success is Our Success.
             </h3>
@@ -865,7 +927,7 @@ const AboutUs = () => {
     font-bold!
     text-center
 
-    max-[767px]:pt-[90px]!
+    max-[767px]:mt-[90px]!
     max-[767px]:px-4
     max-[767px]:text-[30px]!
     max-[767px]:leading-[38px]!
@@ -919,156 +981,371 @@ const AboutUs = () => {
               </p>
 
               {/* Team Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {/* Card 1 */}
-                <div className="group bg-[#100606] relative rounded-[14px] overflow-hidden transition-all ease-out duration-800 hover:bg-white hover:text-black">
-                  <div className="overflow-hidden">
-                    <Image
-                      width={400}
-                      height={500}
-                      src={`/whoppingreact/about/team/img1.png`}
-                      alt=""
-                      className="w-full  h-[390px] object-cover px-2 transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
+ <div
+      ref={sliderRef}
+      className="
+        grid
+        grid-cols-1
+        md:grid-cols-2
+        lg:grid-cols-3
+        gap-8
 
-                  <div className="transition-all  ease-out">
-                    <div
-                      className="hidden group-hover:flex justify-center
-        group-hover:bottom-22
-        group-hover:opacity-100
-        transition-all duration-500 ease-in-out
-  absolute bottom-22 py-1 bg-white w-full gap-[45px] pb-3"
-                    >
-                      <Image
-                        width={28}
-                        height={28}
-                        src="/whoppingreact/about/team/gmail.png"
-                        alt="Gmail"
-                      />
-                      <Image
-                        width={28}
-                        height={28}
-                        src="/whoppingreact/about/team/business.png"
-                        alt="Gmail"
-                      />
-                      <Image
-                        width={28}
-                        height={28}
-                        src="/whoppingreact/about/team/phone.png"
-                        alt="Gmail"
-                      />
-                    </div>
+        max-md:flex
+        max-md:overflow-x-auto
+        max-md:gap-4
+        max-md:snap-x
+        max-md:snap-mandatory
+        max-md:scroll-smooth
+        max-md:[scrollbar-width:none]
+        max-md:[&::-webkit-scrollbar]:hidden
+      "
+    >
+      {/* =========================
+          CARD 1
+      ========================= */}
+      <div
+        className="
+          team-card
+          group
+          bg-[#100606]
+          relative
+          rounded-[14px]
+          overflow-hidden
+          transition-all
+          ease-out
+          duration-800
+          
+          hover:bg-white
+          hover:text-black
 
-                    <h3 className="text-[20px]!  pt-3! text-[#FFFFFF]  text-center font-bold! transition-all duration-500 mb-1!">
-                      Utkarsh Khare
-                    </h3>
+          max-md:min-w-full
+          max-md:w-full
+          max-md:flex-shrink-0
+          max-md:snap-center
+        "
+      >
+        <div className="overflow-hidden">
+          <Image
+            width={400}
+            height={500}
+            src="/whoppingreact/about/team/img1.png"
+            alt="Utkarsh Khare"
+            className="
+              w-full
+              h-[390px]
+              object-cover
+              px-2
+              transition-transform
+              duration-500
+              group-hover:scale-105
+            "
+          />
+        </div>
 
-                    <p className="text-[14px]! pb-3!  text-[#FFFFFF] text-center! group-hover:text-black transition-all duration-500 -mt-4">
-                      Founder & CEO
-                    </p>
-                  </div>
-                </div>
+        <div className="transition-all ease-out">
+          <div
+            className="
+              hidden
+              group-hover:flex
+              justify-center
+              group-hover:bottom-22
+              group-hover:opacity-100
+              transition-all
+              duration-500
+              ease-in-out
+              absolute
+              bottom-22
+              py-1
+              bg-white
+              w-full
+              gap-[45px]
+              pb-3
+            "
+          >
+            <Image
+              width={28}
+              height={28}
+              src="/whoppingreact/about/team/gmail.png"
+              alt="Gmail"
+            />
 
-                {/* Card 2 */}
-                <div className="group bg-[#100606] relative rounded-[14px] overflow-hidden transition-all ease-out duration-800 hover:bg-white hover:text-black">
-                  <div className="overflow-hidden">
-                    <Image
-                      width={400}
-                      height={500}
-                      src={`/whoppingreact/about/team/img2.png`}
-                      alt=""
-                      className="w-full  h-[390px] object-cover px-2 transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
+            <Image
+              width={28}
+              height={28}
+              src="/whoppingreact/about/team/business.png"
+              alt="Business"
+            />
 
-                  <div className="transition-all  ease-out">
-                    <div
-                      className="hidden group-hover:flex justify-center
-        group-hover:bottom-22
-        group-hover:opacity-100
-        transition-all duration-500 ease-in-out
-  absolute bottom-22 py-1 bg-white w-full gap-[45px] pb-3"
-                    >
-                      <Image
-                        width={28}
-                        height={28}
-                        src="/whoppingreact/about/team/gmail.png"
-                        alt="Gmail"
-                      />
-                      <Image
-                        width={28}
-                        height={28}
-                        src="/whoppingreact/about/team/business.png"
-                        alt="Gmail"
-                      />
-                      <Image
-                        width={28}
-                        height={28}
-                        src="/whoppingreact/about/team/phone.png"
-                        alt="Gmail"
-                      />
-                    </div>
-                    <h3 className="text-[20px]!  pt-3! text-center text-[#FFFFFF] font-bold! transition-all duration-500 mb-1!">
-                      Amit Chouhan
-                    </h3>
+            <Image
+              width={28}
+              height={28}
+              src="/whoppingreact/about/team/phone.png"
+              alt="Phone"
+            />
+          </div>
 
-                    <p className="text-[14px]!  pb-3  text-center text-[#FFFFFF] group-hover:text-black transition-all duration-500">
-                      Digital Marketing Lead
-                    </p>
-                  </div>
-                </div>
+          <h3
+            className="
+              text-[20px]!
+              pt-3!
+              text-[#FFFFFF]
+              text-center
+              font-bold!
+              transition-all
+              duration-500
+              mb-1!
+            "
+          >
+            Utkarsh Khare
+          </h3>
 
-                {/* Card 3 */}
-                <div className="group bg-[#100606] relative rounded-[14px] overflow-hidden transition-all ease-out duration-800 hover:bg-white hover:text-black">
-                  <div className="overflow-hidden">
-                    <Image
-                      width={400}
-                      height={500}
-                      src={`/whoppingreact/about/team/img3.png`}
-                      alt=""
-                      className="w-full h-[390px] object-cover px-2 transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
+          <p
+            className="
+              text-[14px]!
+              pb-3!
+              text-[#FFFFFF]
+              text-center!
+              group-hover:text-black
+              transition-all
+              duration-500
+            "
+          >
+            Founder & CEO
+          </p>
+        </div>
+      </div>
 
-                  <div className="transition-all  ease-out">
-                    <div
-                      className="hidden group-hover:flex justify-center
-        group-hover:bottom-22
-        group-hover:opacity-100
-        transition-all duration-500 ease-in-out
-  absolute bottom-22 py-1 bg-white w-full gap-[45px] pb-3"
-                    >
-                      <Image
-                        width={28}
-                        height={28}
-                        src="/whoppingreact/about/team/gmail.png"
-                        alt="Gmail"
-                      />
-                      <Image
-                        width={28}
-                        height={28}
-                        src="/whoppingreact/about/team/business.png"
-                        alt="Business"
-                      />
-                      <Image
-                        width={28}
-                        height={28}
-                        src="/whoppingreact/about/team/phone.png"
-                        alt="Phone"
-                      />
-                    </div>
+      {/* =========================
+          CARD 2
+      ========================= */}
+      <div
+        className="
+          team-card
+          group
+          bg-[#100606]
+          relative
+          rounded-[14px]
+          overflow-hidden
+          transition-all
+          ease-out
+          duration-800
 
-                    <h3 className="text-[20px]! pt-3 text-[#FFFFFF] text-center font-bold! transition-all duration-500 mb-1!">
-                      Shikha Vaid
-                    </h3>
+          hover:bg-white
+          hover:text-black
 
-                    <p className="text-[14px]! pb-3  text-center text-[#FFFFFF] group-hover:text-black transition-all duration-500">
-                      Project Manager
-                    </p>
-                  </div>
-                </div>
-              </div>
+          max-md:min-w-full
+          max-md:w-full
+          max-md:flex-shrink-0
+          max-md:snap-center
+        "
+      >
+        <div className="overflow-hidden">
+          <Image
+            width={400}
+            height={500}
+            src="/whoppingreact/about/team/img2.png"
+            alt="Amit Chouhan"
+            className="
+              w-full
+              h-[390px]
+              object-cover
+              px-2
+              transition-transform
+              duration-500
+              group-hover:scale-105
+            "
+          />
+        </div>
+
+        <div className="transition-all ease-out">
+          <div
+            className="
+              hidden
+              group-hover:flex
+              justify-center
+              group-hover:bottom-22
+              group-hover:opacity-100
+              transition-all
+              duration-500
+              ease-in-out
+              absolute
+              bottom-22
+              py-1
+              bg-white
+              w-full
+              gap-[45px]
+              pb-3
+            "
+          >
+            <Image
+              width={28}
+              height={28}
+              src="/whoppingreact/about/team/gmail.png"
+              alt="Gmail"
+            />
+
+            <Image
+              width={28}
+              height={28}
+              src="/whoppingreact/about/team/business.png"
+              alt="Business"
+            />
+
+            <Image
+              width={28}
+              height={28}
+              src="/whoppingreact/about/team/phone.png"
+              alt="Phone"
+            />
+          </div>
+
+          <h3
+            className="
+              text-[20px]!
+              pt-3!
+              text-center
+              text-[#FFFFFF]
+              font-bold!
+              transition-all
+              duration-500
+              mb-1!
+            "
+          >
+            Amit Chouhan
+          </h3>
+
+          <p
+            className="
+              text-[14px]!
+              pb-3
+              text-center
+              text-[#FFFFFF]
+              group-hover:text-black
+              transition-all
+              duration-500
+            "
+          >
+            Digital Marketing Lead
+          </p>
+        </div>
+      </div>
+
+      {/* =========================
+          CARD 3
+      ========================= */}
+      <div
+        className="
+          team-card
+          group
+          bg-[#100606]
+          relative
+          rounded-[14px]
+          overflow-hidden
+          transition-all
+          ease-out
+          duration-800
+
+          hover:bg-white
+          hover:text-black
+
+          max-md:min-w-full
+          max-md:w-full
+          max-md:flex-shrink-0
+          max-md:snap-center
+        "
+      >
+        <div className="overflow-hidden">
+          <Image
+            width={400}
+            height={500}
+            src="/whoppingreact/about/team/img3.png"
+            alt="Shikha Vaid"
+            className="
+              w-full
+              h-[390px]
+              object-cover
+              px-2
+              transition-transform
+              duration-500
+              group-hover:scale-105
+            "
+          />
+        </div>
+
+        <div className="transition-all ease-out">
+          <div
+            className="
+              hidden
+              group-hover:flex
+              justify-center
+              group-hover:bottom-22
+              group-hover:opacity-100
+              transition-all
+              duration-500
+              ease-in-out
+              absolute
+              bottom-22
+              py-1
+              bg-white
+              w-full
+              gap-[45px]
+              pb-3
+            "
+          >
+            <Image
+              width={28}
+              height={28}
+              src="/whoppingreact/about/team/gmail.png"
+              alt="Gmail"
+            />
+
+            <Image
+              width={28}
+              height={28}
+              src="/whoppingreact/about/team/business.png"
+              alt="Business"
+            />
+
+            <Image
+              width={28}
+              height={28}
+              src="/whoppingreact/about/team/phone.png"
+              alt="Phone"
+            />
+          </div>
+
+          <h3
+            className="
+              text-[20px]!
+              pt-3
+              text-[#FFFFFF]
+              text-center
+              font-bold!
+              transition-all
+              duration-500
+              mb-1!
+            "
+          >
+            Shikha Vaid
+          </h3>
+
+          <p
+            className="
+              text-[14px]!
+              pb-3
+              text-center
+              text-[#FFFFFF]
+              group-hover:text-black
+              transition-all
+              duration-500
+            "
+          >
+            Project Manager
+          </p>
+        </div>
+      </div>
+    </div>
+
             </Col>
           </Row>
         </Container>

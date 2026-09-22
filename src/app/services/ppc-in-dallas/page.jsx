@@ -4,9 +4,9 @@ import PpcInDallas from "@/components/PpcInDallas";
 import SeoServices from "@/components/SeoServices";
 
 export const metadata = {
-  title: "Professional SEO Services | Whopping SEO",
+  title: "Pay Per Click Agency Dallas | Dallas PPC Company - WhoppingSEO",
   description:
-    "Whopping SEO offers customized SEO services to improve your website's visibility, attract qualified traffic, and drive long-term business growth with proven strategies.",
+    "Partner with a results-driven Pay Per Click Agency Dallas businesses trust. As a leading Dallas PPC Company, we turn clicks into leads and sales — get your free audit today.",
 };
 
 export default function ContactPage() {

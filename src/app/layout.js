@@ -22,7 +22,7 @@ const poppins = Poppins({
 export const metadata = {
   title: {
     default: "Whopping SEO",
-    template: "%s | Whopping SEO",
+    template: "",
   },
   description: "Whopping SEO",
 };

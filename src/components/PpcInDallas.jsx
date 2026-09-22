@@ -229,7 +229,7 @@ const faqs = [
                 <Col lg={6}>
                   <section className="bannnerSection w-full h-screen flex items-start  justify-center  flex-col gap-3 text-white">
                       <div className="bannerHeading font-bold  font-['Poppins']">
-                       <h1 className="text-[45px]! leading-[38px] font-extrabold! md  [45px] md:leading-[50px] font-bold pb-4">Top Pay Per Click Agen  Dallas — More Leads, Better ROI
+                       <h1 className="text-[45px]! leading-[38px] font-extrabold! md  [45px] md:leading-[50px] font-bold pb-4">Top Pay Per Click Agency  Dallas — More Leads, Better ROI
                       </h1>
                       </div>
                       <div className="bannerPar">Running Google Ads without expert help is one of the fastest ways to burn through your budget and get zero results. Dallas businesses that partner with a professional pay per click agency in Dallas consistently outperform competitors, generate higher quality leads, and see measurable returns on every dollar they invest.
@@ -263,12 +263,23 @@ const faqs = [
 
                        <div className='mt-20!'>
                         <h2 className='text-[35px]! font-bold! mb-5'>Why WhoppingSEO Is the #1 Dallas PPC Company</h2>
-                        <span className='flex flex-col gap-2 text-[18px]!  '>
-                            When you search for a dallas ppc company, you will find dozens of agencies all promising the same things — more clicks, more leads, better ROI. So what makes WhoppingSEO different from every other dallas ppc agency in the DFW area?
-                            <span className='pt-[5rem]!'>
-                            The answer is simple: we have built our entire practice around one thing — making every dollar you spend on paid advertising work as hard as humanly possible.
-                            </span>
-                        </span>
+                    <span className="flex flex-col gap-2 text-[18px]!">
+  <span>
+    When you search for a dallas ppc company, you will find dozens of agencies
+    all promising the same things — more clicks, more leads, better ROI. So what
+    makes{" "}
+    <span className="text-[#FFA742] whitespace-nowrap">
+      WhoppingSEO
+    </span>{" "}
+    different from every other dallas ppc agency in the DFW area?
+  </span>
+
+  <span className="pt-[5rem]!">
+    The answer is simple: we have built our entire practice around one thing —
+    making every dollar you spend on paid advertising work as hard as humanly
+    possible.
+  </span>
+</span>
                        </div>
                     </Col>
                 </Row>
@@ -643,7 +654,7 @@ const faqs = [
                                 </p>
                                 <p className="text-[18px]! pb-10 ">
                                 <span className=" text-[#1A98FF] font-bold!">Competition in Dallas Has Increased  </span>
-                               More Dallas businesses are running Google Ads than ever before. Without professional keyword strategy, bid management, and ad copy optimization, your ads are competing against well-managed campaigns with larger budgets. A professional <span className=" text-[#1A98FF] font-bold!">dallas ppc company </span>dallas ppc company levels the playing field. 
+                               More Dallas businesses are running Google Ads than ever before. Without professional keyword strategy, bid management, and ad copy optimization, your ads are competing against well-managed campaigns with larger budgets. A professional <span className=" text-[#1A98FF] font-bold!">dallas ppc company </span>levels the playing field. 
                                 </p>
                                 
                          </div>
