@@ -9,7 +9,7 @@ import { FaUserDoctor } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
 import { Minus, Plus } from 'lucide-react';
 import QuickContactForm from "./QuickContactForm";
-
+import Link from 'next/link';
 const SeoServices = () => {
       const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
             const [active, setActive] = useState(1);
@@ -242,7 +242,7 @@ const services = [
                            <br />It now includes Answer Engine Optimization (AEO) — ensuring your content getscited in Google AI Overviews, ChatGPT, and Perplexity — and AI SEO services that use machine intelligence to find and capture opportunities faster than ever before.
                           <br />
                           <br />
-                          At Whopping SEO, we build strategies that cover every dimension of modern search — so your business gets found everywhere your customers are looking, from traditional search results to AI-generated answers.
+                          At WhoppingSEO, we build strategies that cover every dimension of modern search — so your business gets found everywhere your customers are looking, from traditional search results to AI-generated answers.
 
                           </div>
                              <button className="px-4 py-2! rounded-full! bg-gradient-to-r from-[#1A62FF] to-[#6A00FF] hover:opacity-90 transition-all duration-300 flex items-center gap-2 font-semibold text-white w-full lg:w-auto justify-center">
@@ -427,7 +427,32 @@ const services = [
                               </p>
                               We build a complete local SEO strategy for your restaurant — optimizing your Google Business Profile, managing online reviews, creating food and location-based content, and building the local authority that puts you at the top of every relevant local search.
                           </div>
-                          <p className="text-[20px]! font-medium pt-10">Internal: <span className="text-[#1A62FF]"> Local SEO Services | Digital Marketing Frisco</span></p>
+                          <p className="text-[20px]! font-medium pt-10"><span className="text-[#1A62FF]"> 
+                             <span className="text-[#1A62FF]! whitespace-nowrap">
+        <Link
+          href="https://whoppingseo.com/services/seo-services/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#1A62FF]! no-underline! hover:text-[#1A62FF]! hover:no-underline!"
+        >
+           Local SEO Services </Link>
+      </span>{" "}
+
+  {" "}  | 
+                      <span className="text-[#1A62FF]! whitespace-nowrap">
+        <Link
+          href="https://whoppingseo.com/services/digital-marketing-agency-in-frisco/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#1A62FF]! no-underline! hover:text-[#1A62FF]! hover:no-underline!"
+        >
+          Digital Marketing Frisco </Link>
+      </span>{" "}       
+
+
+                           </span>
+                             
+                             </p>
                           
                              
                            </section>
@@ -612,7 +637,7 @@ const services = [
                      <Col >
                      <div>
                         <div className="bannerHeading font-bold  font-['Poppins']">
-                                        <h4 className='text-[20px]! font-black! text-[#1A62FF]!'>WHY WHOPPING SEO</h4>
+                                        <h4 className='text-[20px]! font-black! text-[#1A62FF]!'>WHY WhoppingSEO</h4>
 
                                    <h2 className="text-[45px]! leading-[38px] font-extrabold md:text-[45px] md:leading-[50px] max-w-[70%] font-bold">What Makes Us Different
                                </h2>
@@ -842,7 +867,7 @@ const services = [
                          <Container>
                                <Row>
                                <Col>
-                                <h2 className='text-[41px]! font-bold! text-white py-4'>Explore More From Whopping SEO</h2>
+                                <h2 className='text-[41px]! font-bold! text-white py-4'>Explore More From WhoppingSEO</h2>
             
                                 <p className='text-[18px]! pb-10!' >Our ppc services dallas team works with businesses across a wide range of industries. PPC advertising is especially powerful for:</p>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

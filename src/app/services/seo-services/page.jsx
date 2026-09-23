@@ -3,9 +3,9 @@ import PpaServies from "@/components/PpaServies";
 import SeoServices from "@/components/SeoServices";
 
 export const metadata = {
-  title: "Professional SEO Services | Whopping SEO",
+  title: "Professional Local SEO Services | Local SEO | WhoppingSEO",
   description:
-    "Whopping SEO offers customized SEO services to improve your website's visibility, attract qualified traffic, and drive long-term business growth with proven strategies.",
+    " Trusted Professional Local SEO Services helping businesses dominate Local SEO rankings — more visibility, more calls, more customers. Free strategy call.",
 };
 
 export default function ContactPage() {

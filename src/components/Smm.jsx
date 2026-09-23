@@ -9,6 +9,7 @@ import { FaUserDoctor } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
 import { Minus, Plus } from 'lucide-react';
 import QuickContactForm from "./QuickContactForm";
+import Link from 'next/link';
 
 const Smm = () => {
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
@@ -97,39 +98,39 @@ const services = [
 ];
       const faqs = [
   {
-    question: "What is local SEO and why does my business need it?",
+    question: "What is included in social media marketing services?",
     answer:
-      "Local SEO (Local Search Engine Optimization) is the process of optimizing your online presence to help your business appear in local search results on Google, Google Maps, and other search engines. It helps customers nearby find your products or services when searching for 'near me' or location-specific keywords. If you want to attract more local customers, increase foot traffic, and generate qualified leads, local SEO is essential.",
+      "Our social media marketing services include strategy & consulting, content creation, paid social advertising, community management, influencer marketing, and monthly performance reporting — covering every stage of your social presence from planning to execution.",
   },
   {
-    question: "How long does local SEO take to show results?",
+    question: "Which social media platforms do you manage?",
     answer:
-      "Local SEO typically starts showing noticeable improvements within 3 to 6 months, depending on your industry, competition, and the current state of your website. Businesses with an optimized Google Business Profile and strong local signals may see results sooner. Consistent optimization helps achieve long-term rankings and sustainable growth.",
+      "We manage campaigns across Facebook, Instagram, LinkedIn, YouTube, Pinterest, and X (Twitter), tailoring strategy and content to each platform's audience and algorithm",
   },
   {
-    question: "What is the difference between regular SEO and local SEO?",
+    question: "How long does it take to see results from social media marketing?",
     answer:
-      "Regular SEO focuses on improving your website's visibility on a national or global level, while Local SEO targets customers in a specific geographic area. Local SEO includes optimizing your Google Business Profile, local citations, customer reviews, location-based keywords, and Google Maps rankings, making it ideal for businesses serving local communities.",
+      "Most clients start seeing engagement growth within 4-6 weeks, with measurable lead or sales impact typically visible within 90 days, depending on industry, budget, and starting point",
   },
   {
-    question: "What is AEO and GEO and how does it help local businesses?",
+    question: "Do you handle both organic and paid social media marketing?",
     answer:
-      "AEO (Answer Engine Optimization) helps your content appear as direct answers in AI-powered platforms and voice search results. GEO (Generative Engine Optimization) focuses on improving your visibility in AI search tools like ChatGPT, Google AI Overviews, Gemini, and Perplexity. By optimizing for both AEO and GEO, local businesses can increase their online visibility, reach more potential customers, and stay competitive as search evolves.",
+      "Yes. We build organic content strategies to grow your community and run paid social advertising campaigns to accelerate reach, leads, and conversions — often combining both for a full-funnel approach.",
   },
   {
-    question: "Does local SEO work for small businesses with a tight budget?",
+    question: "Is social media marketing suitable for B2B businesses?",
     answer:
-      "Yes. Local SEO is one of the most cost-effective digital marketing strategies for small businesses. By targeting nearby customers who are actively searching for your services, Local SEO delivers high-quality traffic without requiring a large advertising budget. Even with limited resources, businesses can achieve strong local visibility through consistent optimization.",
+      "Absolutely. We run dedicated LinkedIn marketing strategies for B2B brands, including thought leadership content, profile optimization, and targeted LinkedIn Ads to reach decision-makers..",
   },
   {
-    question: "What is Google Business Profile optimization and why does it matter?",
+    question: "How much does social media marketing cost?",
     answer:
-      "Google Business Profile optimization involves improving your business listing with accurate information, business categories, services, photos, operating hours, customer reviews, and regular updates. A fully optimized profile increases your chances of appearing in Google Maps and local search results, helping customers find, contact, and visit your business more easily.",
+      "Pricing depends on the platforms, scope (organic vs. paid), and content volume needed. We build custom packages based on your goals and budget — contact us for a free consultation and quote.",
   },
   {
-    question: "Do you offer local SEO services for businesses in Frisco and Dallas, TX?",
+    question: "How do you measure social media marketing success?",
     answer:
-      "Yes. We provide professional Local SEO services for businesses in Frisco, Dallas, TX, and surrounding areas. Our services include Google Business Profile optimization, local keyword research, citation management, on-page local SEO, review management, local link building, AEO, GEO, and AI Search Optimization to help your business attract more local customers and generate qualified leads.",
+      "We track KPIs like engagement rate, follower growth, website traffic, cost-per-lead, and ROAS (for paid campaigns), delivering transparent monthly reports in plain language — not vague metrics.",
   },
 ];
     return (
@@ -184,8 +185,8 @@ const services = [
                                <p className="text-[20px] font-medium pb-[4rem]">From strategy to execution, we manage every pillar of your social presence — so you can focus on running your business while we fuel your growth.</p>
                                <section className="HoemAboutus">
                              
-                                 <div className="noArea    gap-6 items-center justify-between flex-wrap ">
-            <div className="flex flex-wrap lg:flex-nowrap justify-center gap-10 lg:gap-[15%] items-center">                           
+                                 <div className="noArea  gap-5 items-center justify-between flex-wrap ">
+            <div className="flex flex-wrap lg:flex-nowrap justify-center gap-10 lg:gap-[10%] items-center">                           
               <div className="numberDiv flex flex-col py-4 z-10 bg-[17171754] "  >
                 <span className="no text-[#1A98FF] z-40 ">500+</span>
                                          <span className="notext z-40 ">Brand Grown</span>
@@ -223,7 +224,21 @@ const services = [
                                  </div>
                                  <div className="text-[20px]! ">
                        
-                              Social media marketing (SMM) is the strategic use of platforms like Facebook, Instagram, LinkedIn, YouTube, Pinterest, and X (Twitter) to promote your brand, build community, and drive measurable business outcomes.
+                              Social media marketing (SMM) is the strategic use of platforms like
+                              {" "}
+                               
+                                 <span className="text-[#1A62FF]! whitespace-nowrap">
+        <Link
+          href="https://whoppingseo.com/blog/facebook-lead-generation-guide/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#1A62FF]! no-underline! hover:text-[#1A62FF]! hover:no-underline!"
+        >
+                                         Facebook,
+        </Link>
+      </span>{" "}
+                               
+                                Instagram, LinkedIn, YouTube, Pinterest, and X (Twitter) to promote your brand, build community, and drive measurable business outcomes.
 
                                <br />
                                <br />

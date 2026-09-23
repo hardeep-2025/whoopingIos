@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import QuickContactForm from './QuickContactForm';
+import Link from 'next/link';
 
 const PpcInDallas = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -88,7 +89,7 @@ const servicesPiont = [
     id: 1,
     title: "Google Search Ads",
     description:
-      "The most powerful way to reach customers who are actively searching for what you sell. Our team conducts deep keyword research, writes compelling ad copy, builds structured campaigns, and manages bids daily to ensure maximum visibility at the lowest possible cost per click. This is the foundation of effective ppc services dallas businesses rely on for consistent lead generation.",
+      "The most powerful way to reach customers who are actively searching for what you sell. Our team conducts deep keyword research, writes compelling ad copy, builds structured campaigns, and manages bids daily to ensure maximum visibility at the lowest possible cost per click. This is the foundation of effective  ppc services dallas businesses rely on for consistent lead generation.",
     icon: `/whoppingreact/digetilMarkting/ourServices/img5.png`,
   },
 
@@ -268,9 +269,15 @@ const faqs = [
     When you search for a dallas ppc company, you will find dozens of agencies
     all promising the same things — more clicks, more leads, better ROI. So what
     makes{" "}
-    <span className="text-[#FFA742] whitespace-nowrap">
-      WhoppingSEO
-    </span>{" "}
+ <span className="text-[#FFA742] whitespace-nowrap">
+  <Link
+    href="https://whoppingseo.com/"
+    target="_blank"
+    className="text-[#FFA742]! no-underline! hover:text-[#FFA742]! hover:no-underline"
+  >
+    WhoppingSEO
+  </Link>
+</span>{" "}
     different from every other dallas ppc agency in the DFW area?
   </span>
 
@@ -590,7 +597,18 @@ const faqs = [
                  <Col>
                     <h2 className='text-[40px]! font-bold! text-white pb-8'>Who Benefits Most From Dallas PPC Management</h2>
                       <p className='text-[25px]! font-semibold! pb-15'>
-                        Our ppc services dallas team works with businesses across a wide range of industries. PPC advertising is especially powerful for:
+                        Our {" "}
+                        
+                        <span className="text-[#FFA742] whitespace-nowrap">
+  <Link
+    href="https://whoppingseo.com/services/ppc-services/"
+    target="_blank"
+    className="text-[#FFA742]! no-underline! hover:text-[#FFA742]! hover:no-underline!"
+  >
+  ppc services
+  </Link>
+</span>{" "}
+                        dallas team works with businesses across a wide range of industries. PPC advertising is especially powerful for:
                       </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {makeUsApart.map((item) => (

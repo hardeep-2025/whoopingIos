@@ -2,9 +2,9 @@ import LocalSEo from "@/components/LocalSEo";
 import PpaServies from "@/components/PpaServies";
 
 export const metadata = {
-  title: "Expert PPC Management Services | Whopping SEO",
+  title: "PPC Services | Whopping SEO – Data-Driven Ad Campaigns",
   description:
-    "Whopping SEO delivers customized PPC services designed to increase conversions, reduce ad spend, and help your business reach the right audience at the right time.",
+    "Get more leads with our PPC Services. WhoppingSEO creates high-performing ad campaigns tailored to your business goals. Get started free",
 };
 
 export default function ContactPage() {

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { Container,Row,Col,  } from "react-bootstrap";
 import QuickContactForm from './QuickContactForm';
-
+import Link from 'next/link';
 const DigitalMarketing = () => {
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 const [openIndex, setOpenIndex] = useState(0);
@@ -17,7 +17,7 @@ const [openIndex, setOpenIndex] = useState(0);
 const faqs = [
   {
     question:
-      "What digital marketing services does Whopping SEO offer?",
+      "What digital marketing services does WhoppingSEO offer?",
     answer: "We offer a complete range of digital marketing services including Search Engine Optimization (SEO), Local SEO, Pay-Per-Click Advertising (PPC), Social Media Marketing, Content Marketing, Email Marketing, Web Design & Development, Link Building, and Online Reputation Management. Every service is customized to your specific business goals and industry.",
   },
   {
@@ -34,7 +34,7 @@ const faqs = [
     answer: "We work with businesses of all sizes — from local service providers and small e-commerce stores to large enterprises and multi-location brands. Our strategies are always scaled to your budget and goals. No business is too small to benefit from a smart, well-executed digital marketing plan.",
   },
   {
-    question: "Why should I choose Whopping SEO over other digital marketing agencies?",
+    question: "Why should I choose WhoppingSEO over other digital marketing agencies?",
     answer: "Three things set us apart: transparency, customization, and real results. We don't use template strategies. Every client gets a custom-built plan. You own all your accounts and data. You get clear monthly reports. And with a 93% client retention rate, our results speak louder than any pitch. We invite you to talk to our existing clients before making a decision.",
   },
 
@@ -130,23 +130,53 @@ const FourStep = [
     icon: `/whoppingreact/digetilMarkting/fourstep/img3.png`,
   },]
 const services = [
-  {
-    id: 1,
-    title: "Search Engine Optimization (SEO)",
-    description:
-      "Rank higher on Google and drive consistent organic traffic to your site. Our SEO services cover technical SEO, on-page optimization, content strategy, and link building — all following white-hat best practices that deliver long-term results.",
-    icon: `/whoppingreact/digetilMarkting/ourServices/img5.png`,
-    link: "Explore SEO Services →",
-  },
+ {
+  id: 1,
+  title: "Search Engine Optimization (SEO)",
+  description: (
+    <>
+      Rank higher on Google and drive consistent organic traffic to your site. Our{" "}
+      <span className="text-[#FFA742]! whitespace-nowrap">
+        <Link
+          href="https://whoppingseo.com/services/seo-services/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#FFA742]! no-underline! hover:text-[#FFA742]! hover:no-underline!"
+        >
+          SEO services
+        </Link>
+      </span>{" "}
+      cover technical SEO, on-page optimization, content strategy, and link
+      building — all following white-hat best practices that deliver long-term
+      results.
+    </>
+  ),
+  icon: `/whoppingreact/digetilMarkting/ourServices/img5.png`,
+  link: "Explore SEO Services →",
+},
 
-  {
-    id: 2,
-    title: "Local SEO",
-    description:
-      "Dominate your local market and show up in Google Maps and near me searches. Our local SEO strategies help brick-and-mortar businesses, service providers, and multi-location brands capture high-intent customers nearby.",
-    icon: `/whoppingreact/digetilMarkting/ourServices/white2.png`,
-    link: "Explore SEO Services →",
-  },
+ {
+  id: 2,
+  title: "Local SEO",
+  description: (
+    <>
+      Dominate your local market and show up in Google Maps and near me searches. Our{" "}
+      <span className="text-[#FFA742]! whitespace-nowrap">
+        <Link
+          href=" https://whoppingseo.com/services/local-seo-services/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#FFA742]! no-underline! hover:text-[#FFA742]! hover:no-underline!"
+        >
+          local SEO
+        </Link>
+      </span>{" "}
+      strategies help brick-and-mortar businesses, service providers, and multi-location brands capture high-intent customers nearby.
+    </>
+  ),
+  icon: `/whoppingreact/digetilMarkting/ourServices/white2.png`,
+  link: "Explore SEO Services →",
+},
 
   {
     id: 3,
@@ -315,7 +345,17 @@ const stats = [
                     <h2 className='text-[41px]! font-bold! text-white py-4'>Your <br/> Customer are online <br/>Are you 
                    <br/> meeting them there?</h2>
 
-                    <p className='text-[18px]! pb-10!' >Over 5 billion people use the internet daily. If your business isn`t showing up where they search, browse, and buy — someone else is. Whopping SEO helps you close that gap with smart, data-driven digital marketing strategies built specifically for your industry and goals.</p>
+                    <p className='text-[18px]! pb-10!' >Over 5 billion people use the internet daily. If your business isn`t showing up where they search, browse, and buy — someone else is. 
+                                            <span className="text-[#FFA742] whitespace-nowrap">
+                        <Link
+                          href="https://whoppingseo.com"
+                          target="_blank"
+                          className="text-[#FFA742]! no-underline! hover:text-[#FFA742]! hover:no-underline!"
+                        >
+                         WhoppingSEO
+                        </Link>
+                      </span>{" "}
+                      helps you close that gap with smart, data-driven digital marketing strategies built specifically for your industry and goals.</p>
                         
                     <p className='text-[18px]!' >
                     We are not a generic agency that runs the same playbook for every client. We dig deep into your market, your competitors, and your audience — and then build a plan that`s yours alone. 
@@ -505,9 +545,9 @@ const stats = [
                   </p>
 
                   {/* Link */}
-                  <button className="text-[#1A62FF] text-[20px] font-bold hover:translate-x-1 transition-all duration-300">
+                  {/* <button className="text-[#1A62FF] text-[20px] font-bold hover:translate-x-1 transition-all duration-300">
                     {item.link}
-                  </button>
+                  </button> */}
                 </div>
               ))}
             </div>
@@ -609,7 +649,7 @@ const stats = [
              <Container>
                    <Row>
                    <Col>
-                   <h4 className='text-[20px]! font-black! text-[#1A62FF]!'>Why Whopping SEO</h4>
+                   <h4 className='text-[20px]! font-black! text-[#1A62FF]!'>Why WhoppingSEO</h4>
                     <h2 className='text-[41px]! font-bold! text-white py-4'>What Makes Us Different</h2>
 
                     <p className='text-[18px]! pb-10!' >Across industries and budgets, our clients see measurable, sustained growth.</p>

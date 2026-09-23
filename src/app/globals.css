@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: var(--font-poppins);
+ font-family: var(--font-poppins) !important;
   background-color:  #0a0a0a !important;
   color:  #ededed !important;
 }

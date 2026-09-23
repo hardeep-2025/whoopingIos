@@ -179,8 +179,8 @@ const Servies = () => {
                 {/* <div className="inline-flex mt-5 h-[44px]  items-center rounded-full bg-[#082359] border border-[#FFFFFF] px-4 py-1.5 text-xs md:text-sm text-[#FFFFFF] font-medium">
                 Measurable Results
               </div> */}
-                <div className="mt-5 max-[767px]:mb-3 max-[400px]:pt-10 max-[767px]:flex max-[767px]:w-full max-[767px]:justify-center">
-                  <div className="border border-white font-[16px]! text-[#FFFFFF] tracking-wide uppercase max-[400px]:py-3! px-4 py-2 rounded-full bg-[#082359] backdrop-blur-sm mb-[30px]! w-max!">
+                <div className="mt-20! mx-13!  max-[767px]:mx-0!  max-[767px]:mb-3 max-[400px]:pt-10! max-[767px]:flex max-[767px]:w-full! max-[767px]:justify-center">
+                  <div className="border font-f border-white font-[16px]! text-[#FFFFFF]!  uppercase max-[400px]:py-3! px-4 py-2 rounded-full bg-[#082359] backdrop-blur-sm mb-[30px]! w-max!">
                     Measurable Results
                   </div>
                 </div>

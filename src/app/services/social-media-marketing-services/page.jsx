@@ -2,9 +2,9 @@
 import Smm from "@/components/Smm";
 
 export const metadata = {
-  title: "Social Media Marketing Services | Whopping SEO",
+  title: "Expert Social Media Marketing Services | Whopping SEO",
   description:
-    "Grow your brand with Whopping SEO's social media marketing services. We create data-driven campaigns that increase engagement, generate leads, and boost your online presence.",
+    "WhoppingSEO delivers social media marketing services across Facebook, Instagram, LinkedIn & more — built to grow followers, leads & sales. Get started.",
 };
 
 export default function ContactPage() {

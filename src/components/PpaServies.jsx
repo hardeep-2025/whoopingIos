@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Minus, Plus } from 'lucide-react';
 import QuickContactForm from "./QuickContactForm";
-
+import Link from 'next/link';
 const PpaServies = () => {
 const [hoveredId, setHoveredId] = useState(null);
       const [active, setActive] = useState(1);
@@ -526,7 +526,18 @@ const makeUsApart = [ {
           </h2>
 
           <p className="text-[25px] text-[#d1d1d1] mb-8">
-            Keywords are just words. Intent is what drives real customers to your door. Our local SEO strategy is built around all three types of local search intent.
+            Keywords are just words. Intent is what drives real customers to your door. Our {" "}
+             <span className="text-[#ffa742]! whitespace-nowrap">
+                    <Link
+                      href="https://whoppingseo.com/services/local-seo-services/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#ffa742]! no-underline! hover:text-[#ffa742]! hover:no-underline!"
+                    >
+                        local SEO </Link>
+                  </span>{" "}
+            
+             strategy is built around all three types of local search intent.
 
           </p>
       {/* Left Content */}
