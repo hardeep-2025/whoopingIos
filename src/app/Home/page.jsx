@@ -322,18 +322,18 @@ const services = [
           {/* <h2 className="MainHeading max-[400px]:!text-center font-bold max-[400px]:!text-[35px]">Our <span className="text-[#1A98FF]" > Digital Marketing Services —</span> Everything Your <br /> Business Needs to Grow Online </h2> */}
           <span className="!para mt-7 max-[380px]:mt-[8px]! flex flex-col text-[18px] text-[#ffffff] max-[400px]:text-center">
             <p>
-            WhoppingSEO offers a complete suite of AI-powered digital marketing services designed to grow your business across every online channel. Every service is data-driven, transparent, and built around your specific goals
+            WhoppingSEO offer a complete suite of AI-powered digital marketing services designed to grow your business across every online channel. Every service is data-driven, transparent, and built around your specific goals
             </p>
           </span>
          </div>
          <div className=" imagePointSection mb-[3rem]!">
-          <div className="leftSide mb-[7rem]!">
+          <div className="leftSide w-[100%]! mb-[7rem]!">
             <Image
             src={`/whoppingreact/Home/bussnessM.png`}
               alt=""
               width={1000}
               height={1000}
-              className="w-full h-auto min-[991px]:h-[615px]! min-[991px]:w-[540px]"/>
+              className="w-full! h-auto! max-w-auto! min-[991px]:h-[615px]! min-[991px]:w-[540px]"/>
 
               <Image
                 src={`/whoppingreact/Home/100k.png`}
