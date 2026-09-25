@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef,useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
@@ -16,8 +16,7 @@ const AboutUs = () => {
   const [active, setActive] = useState(1);
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
-
-const sliderRef = useRef(null);
+  const sliderRef = useRef(null);
 
   useEffect(() => {
     const slider = sliderRef.current;
@@ -40,8 +39,7 @@ const sliderRef = useRef(null);
         const cardWidth = card.offsetWidth;
         const gap = 16;
 
-        const maxScroll =
-          slider.scrollWidth - slider.clientWidth;
+        const maxScroll = slider.scrollWidth - slider.clientWidth;
 
         // If reached last card, smoothly go back to first
         if (slider.scrollLeft >= maxScroll - 10) {
@@ -73,9 +71,6 @@ const sliderRef = useRef(null);
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-
-
 
   return (
     <div>
@@ -114,7 +109,7 @@ const sliderRef = useRef(null);
     max-[991px]:!text-[50px]
     max-[991px]:!leading-[44px]
     max-[767px]:!text-[40px]
-    max-[767px]:!leading-[36px]
+    max-[767px]:!leading-[50px]!
     max-[767px]:text-center
     max-[400px]:!mt-6
   "
@@ -138,18 +133,18 @@ const sliderRef = useRef(null);
                   <div className="mt-[54px]! flex! !flex-row !items-start gap-4! pb-1 max-[767px]:mt-[46px]! max-[767px]:!flex-col max-[767px]:!items-center max-[767px]:!justify-center max-[767px]:gap-5!">
                     <button className="!flex h-[60px]! w-[210px]! !items-center !justify-center !gap-2 !rounded-full !bg-[#B1DCFF] !px-6 !text-[16px] !font-bold !text-[#000000] !whitespace-nowrap">
                       Get Started Now
-<span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">                        ↗
+                      <span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">
+                        {" "}
+                        ↗
                       </span>
                     </button>
 
                     <button className="!flex h-[60px]! w-[210px]! !items-center !justify-center !gap-2 !rounded-full !border !border-white/40 !bg-transparent !px-6 text-[16px]! !font-bold !text-[#FFFFFF] !whitespace-nowrap">
                       See Our Services
-                      <span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">                        
+                      <span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">
                         ↗
                       </span>
                     </button>
-
-                    
                   </div>
                 </div>
               </section>
@@ -323,7 +318,10 @@ const sliderRef = useRef(null);
         </div>
       </div>
 
-      <div className="bg-black  max-[767px]:mt-[95px]!" style={{ marginTop: "120px" }}   >
+      <div
+        className="bg-black  max-[767px]:mt-[95px]!"
+        style={{ marginTop: "120px" }}
+      >
         {" "}
       </div>
       <div className="flex max-[767px]:flex-col">
@@ -333,7 +331,7 @@ const sliderRef = useRef(null);
             height={400}
             src={`/whoppingreact/about/blackbg2.png`}
             alt=""
-  className="w-full h-full -z-20 max-[767px]:w-[393px]! max-[767px]:h-[450px]!"
+            className="w-full h-full -z-20 max-[767px]:w-[393px]! max-[767px]:h-[450px]!"
           />
         </div>
         <div
@@ -374,9 +372,7 @@ const sliderRef = useRef(null);
             height={400}
             src={`/whoppingreact/about/blackbg1.png`}
             alt=""
-     
-              className="w-full h-full -z-20 max-[767px]:w-[393px]! max-[767px]:h-[417px]!"
-
+            className="w-full h-full -z-20 max-[767px]:w-[393px]! max-[767px]:h-[417px]!"
           />
         </div>
       </div>
@@ -420,30 +416,48 @@ const sliderRef = useRef(null);
 
               <div className="text-[18px]  max-[767px]:mt-[32px]! leading-[22px]! text-[#FFFFFF]! max-[400px]:text-center">
                 <p>
-                At WhoppingSEO, we help businesses grow through SEO, AI SEO, Local SEO, PPC, content marketing, social media, and AI search optimization. Our results-driven strategies focus on improving visibility, generating qualified leads, increasing conversions, and driving sustainable revenue growth.
+                  At WhoppingSEO, we help businesses grow through SEO, AI SEO,
+                  Local SEO, PPC, content marketing, social media, and AI search
+                  optimization. Our results-driven strategies focus on improving
+                  visibility, generating qualified leads, increasing
+                  conversions, and driving sustainable revenue growth.
                 </p>
 
                 <p className="font-[800] mt-[25px]!">Why choose WhoppingSEO?</p>
 
                 <ul className="mt-[10px] pl-0! list-none space-y-1 px-0! text-[17px]!">
                   <li>
-                    <span className="font-semibold">Proven Expertise :</span>Our team brings practical experience and industry knowledge
+                    <span className="font-semibold">Proven Expertise :</span>Our
+                    team brings practical experience and industry knowledge
                   </li>
 
                   <li>
-                    <span className="font-semibold">Results-Oriented Approach :</span> We focus on strategies that deliver measurable business outcomes.
+                    <span className="font-semibold">
+                      Results-Oriented Approach :
+                    </span>{" "}
+                    We focus on strategies that deliver measurable business
+                    outcomes.
                   </li>
 
                   <li>
-                    <span className="font-semibold">Client-Centric Focus :</span> Your goals and growth remain at the heart of our strategy.
+                    <span className="font-semibold">
+                      Client-Centric Focus :
+                    </span>{" "}
+                    Your goals and growth remain at the heart of our strategy.
                   </li>
 
                   <li>
-                    <span className="font-semibold">Comprehensive Solutions :</span>  From SEO and Local SEO to PPC, content, and AI search, we provide solutions designed for modern businesses.
+                    <span className="font-semibold">
+                      Comprehensive Solutions :
+                    </span>{" "}
+                    From SEO and Local SEO to PPC, content, and AI search, we
+                    provide solutions designed for modern businesses.
                   </li>
 
                   <li>
-                    <span className="font-semibold">Ongoing Support :</span> We continuously monitor performance, identify opportunities, and refine strategies for long-term growth.
+                    <span className="font-semibold">Ongoing Support :</span> We
+                    continuously monitor performance, identify opportunities,
+                    and refine strategies for long-term growth.
                   </li>
                 </ul>
               </div>
@@ -456,8 +470,8 @@ const sliderRef = useRef(null);
         <Container>
           <Row>
             <Col>
-            <h2
-  className="
+              <h2
+                className="
     text-[35px]!
     uppercase
     font-bold!
@@ -469,11 +483,10 @@ const sliderRef = useRef(null);
     max-[776px]:leading-[45px]!
     max-[776px]:text-center!
   "
->
-  Our Core
-  <br className="max-[776px]:block hidden" />
-  Values:
-</h2>
+              >
+                Our Core
+                <br className="max-[776px]:block hidden" /> Values:
+              </h2>
             </Col>
           </Row>
         </Container>
@@ -539,8 +552,8 @@ const sliderRef = useRef(null);
         <Container>
           <Row>
             <Col>
-             <h2
-  className="
+              <h2
+                className="
     text-[35px]!
     text-[#FFFFFF]!
     leading-[40px]!
@@ -554,21 +567,20 @@ const sliderRef = useRef(null);
     max-[776px]:text-center!
     max-[776px]:gap-1!
   "
->
-  <Image
-    width={44}
-    height={44}
-    src="/whoppingreact/about/bluetick.png"
-    alt=""
-  />
+              >
+                <Image
+                  width={44}
+                  height={44}
+                  src="/whoppingreact/about/bluetick.png"
+                  alt=""
+                />
 
-  <span>
-    Ready, Set,
-      <br className="max-[776px]:block hidden" />
-
-     Go!
-  </span>
-</h2>
+                <span>
+                  Ready, Set,
+                  <br className="max-[776px]:block hidden" />
+                  Go!
+                </span>
+              </h2>
               <p className="text-[20px]! font-medium pb-[42px]!  max-[767px]:mt-[13px]! text-[#FFFFFF] leading-[28px]! max-[400px]:text-[20px]! max-[400px]:text-center!">
                 Beyond marketing, we’re your trusted partner in growth. <br />
                 At WhoppingSEO, we’re dedicated to helping businesses achieve
@@ -585,7 +597,7 @@ const sliderRef = useRef(null);
                     height={81}
                     src={`/whoppingreact/about/go/img1.png`}
                     alt=""
-                   className="min-h-[81px]! min-w-[81px]!"
+                    className="min-h-[81px]! min-w-[81px]!"
                   />
 
                   <h2 className="text-[20px]! text-[#FFFFFF] leading-[22px]! font-bold! mt-[27px]!">
@@ -611,7 +623,7 @@ const sliderRef = useRef(null);
                     height={81}
                     src={`/whoppingreact/about/go/img2.png`}
                     alt=""
-                     className="min-h-[81px]! min-w-[81px]!"
+                    className="min-h-[81px]! min-w-[81px]!"
                   />
 
                   <h2 className="text-[20px]! text-[#FFFFFF] leading-[22px]! font-bold! mt-[27px]!">
@@ -633,7 +645,7 @@ const sliderRef = useRef(null);
                     height={81}
                     src={`/whoppingreact/about/go/img3.png`}
                     alt=""
-                     className="min-h-[81px]! min-w-[81px]!"
+                    className="min-h-[81px]! min-w-[81px]!"
                   />
 
                   <h2 className="text-[20px]! text-[#FFFFFF] leading-[22px]! font-bold! mt-[27px]!">
@@ -981,9 +993,9 @@ const sliderRef = useRef(null);
               </p>
 
               {/* Team Cards */}
- <div
-      ref={sliderRef}
-      className="
+              <div
+                ref={sliderRef}
+                className="
         grid
         grid-cols-1
         md:grid-cols-2
@@ -999,12 +1011,12 @@ const sliderRef = useRef(null);
         max-md:[scrollbar-width:none]
         max-md:[&::-webkit-scrollbar]:hidden
       "
-    >
-      {/* =========================
+              >
+                {/* =========================
           CARD 1
       ========================= */}
-      <div
-        className="
+                <div
+                  className="
           team-card
           group
           bg-[#100606]
@@ -1023,14 +1035,14 @@ const sliderRef = useRef(null);
           max-md:flex-shrink-0
           max-md:snap-center
         "
-      >
-        <div className="overflow-hidden">
-          <Image
-            width={400}
-            height={500}
-            src="/whoppingreact/about/team/img1.png"
-            alt="Utkarsh Khare"
-            className="
+                >
+                  <div className="overflow-hidden">
+                    <Image
+                      width={400}
+                      height={500}
+                      src="/whoppingreact/about/team/img1.png"
+                      alt="Utkarsh Khare"
+                      className="
               w-full
               h-[390px]
               object-cover
@@ -1039,12 +1051,12 @@ const sliderRef = useRef(null);
               duration-500
               group-hover:scale-105
             "
-          />
-        </div>
+                    />
+                  </div>
 
-        <div className="transition-all ease-out">
-          <div
-            className="
+                  <div className="transition-all ease-out">
+                    <div
+                      className="
               hidden
               group-hover:flex
               justify-center
@@ -1061,65 +1073,65 @@ const sliderRef = useRef(null);
               gap-[45px]
               pb-3
             "
-          >
-            <Image
-              width={28}
-              height={28}
-              src="/whoppingreact/about/team/gmail.png"
-              alt="Gmail"
-            />
+                    >
+                      <Image
+                        width={28}
+                        height={28}
+                        src="/whoppingreact/about/team/gmail.png"
+                        alt="Gmail"
+                      />
 
-            <Image
-              width={28}
-              height={28}
-              src="/whoppingreact/about/team/business.png"
-              alt="Business"
-            />
+                      <Image
+                        width={28}
+                        height={28}
+                        src="/whoppingreact/about/team/business.png"
+                        alt="Business"
+                      />
 
-            <Image
-              width={28}
-              height={28}
-              src="/whoppingreact/about/team/phone.png"
-              alt="Phone"
-            />
-          </div>
+                      <Image
+                        width={28}
+                        height={28}
+                        src="/whoppingreact/about/team/phone.png"
+                        alt="Phone"
+                      />
+                    </div>
 
-          <h3
-            className="
+                    <h3
+                      className="
               text-[20px]!
               pt-3!
-              text-[#FFFFFF]
+              text-[#FFFFFF]!
               text-center
               font-bold!
               transition-all
               duration-500
               mb-1!
             "
-          >
-            Utkarsh Khare
-          </h3>
+                    >
+                      Utkarsh Khare
+                    </h3>
 
-          <p
-            className="
+                    <p
+                      className="
               text-[14px]!
               pb-3!
-              text-[#FFFFFF]
+                  text-[#FFFFFF]!
               text-center!
               group-hover:text-black
               transition-all
               duration-500
             "
-          >
-            Founder & CEO
-          </p>
-        </div>
-      </div>
+                    >
+                      Founder & CEO
+                    </p>
+                  </div>
+                </div>
 
-      {/* =========================
+                {/* =========================
           CARD 2
       ========================= */}
-      <div
-        className="
+                <div
+                  className="
           team-card
           group
           bg-[#100606]
@@ -1138,14 +1150,14 @@ const sliderRef = useRef(null);
           max-md:flex-shrink-0
           max-md:snap-center
         "
-      >
-        <div className="overflow-hidden">
-          <Image
-            width={400}
-            height={500}
-            src="/whoppingreact/about/team/img2.png"
-            alt="Amit Chouhan"
-            className="
+                >
+                  <div className="overflow-hidden">
+                    <Image
+                      width={400}
+                      height={500}
+                      src="/whoppingreact/about/team/img2.png"
+                      alt="Amit Chouhan"
+                      className="
               w-full
               h-[390px]
               object-cover
@@ -1154,12 +1166,12 @@ const sliderRef = useRef(null);
               duration-500
               group-hover:scale-105
             "
-          />
-        </div>
+                    />
+                  </div>
 
-        <div className="transition-all ease-out">
-          <div
-            className="
+                  <div className="transition-all ease-out">
+                    <div
+                      className="
               hidden
               group-hover:flex
               justify-center
@@ -1176,65 +1188,65 @@ const sliderRef = useRef(null);
               gap-[45px]
               pb-3
             "
-          >
-            <Image
-              width={28}
-              height={28}
-              src="/whoppingreact/about/team/gmail.png"
-              alt="Gmail"
-            />
+                    >
+                      <Image
+                        width={28}
+                        height={28}
+                        src="/whoppingreact/about/team/gmail.png"
+                        alt="Gmail"
+                      />
 
-            <Image
-              width={28}
-              height={28}
-              src="/whoppingreact/about/team/business.png"
-              alt="Business"
-            />
+                      <Image
+                        width={28}
+                        height={28}
+                        src="/whoppingreact/about/team/business.png"
+                        alt="Business"
+                      />
 
-            <Image
-              width={28}
-              height={28}
-              src="/whoppingreact/about/team/phone.png"
-              alt="Phone"
-            />
-          </div>
+                      <Image
+                        width={28}
+                        height={28}
+                        src="/whoppingreact/about/team/phone.png"
+                        alt="Phone"
+                      />
+                    </div>
 
-          <h3
-            className="
+                    <h3
+                      className="
               text-[20px]!
               pt-3!
               text-center
-              text-[#FFFFFF]
+                  text-[#FFFFFF]!
               font-bold!
               transition-all
               duration-500
               mb-1!
             "
-          >
-            Amit Chouhan
-          </h3>
+                    >
+                      Amit Chouhan
+                    </h3>
 
-          <p
-            className="
+                    <p
+                      className="
               text-[14px]!
               pb-3
               text-center
-              text-[#FFFFFF]
+                  text-[#FFFFFF]!
               group-hover:text-black
               transition-all
               duration-500
             "
-          >
-            Digital Marketing Lead
-          </p>
-        </div>
-      </div>
+                    >
+                      Digital Marketing Lead
+                    </p>
+                  </div>
+                </div>
 
-      {/* =========================
+                {/* =========================
           CARD 3
       ========================= */}
-      <div
-        className="
+                <div
+                  className="
           team-card
           group
           bg-[#100606]
@@ -1253,14 +1265,14 @@ const sliderRef = useRef(null);
           max-md:flex-shrink-0
           max-md:snap-center
         "
-      >
-        <div className="overflow-hidden">
-          <Image
-            width={400}
-            height={500}
-            src="/whoppingreact/about/team/img3.png"
-            alt="Shikha Vaid"
-            className="
+                >
+                  <div className="overflow-hidden">
+                    <Image
+                      width={400}
+                      height={500}
+                      src="/whoppingreact/about/team/img3.png"
+                      alt="Shikha Vaid"
+                      className="
               w-full
               h-[390px]
               object-cover
@@ -1269,12 +1281,12 @@ const sliderRef = useRef(null);
               duration-500
               group-hover:scale-105
             "
-          />
-        </div>
+                    />
+                  </div>
 
-        <div className="transition-all ease-out">
-          <div
-            className="
+                  <div className="transition-all ease-out">
+                    <div
+                      className="
               hidden
               group-hover:flex
               justify-center
@@ -1291,61 +1303,60 @@ const sliderRef = useRef(null);
               gap-[45px]
               pb-3
             "
-          >
-            <Image
-              width={28}
-              height={28}
-              src="/whoppingreact/about/team/gmail.png"
-              alt="Gmail"
-            />
+                    >
+                      <Image
+                        width={28}
+                        height={28}
+                        src="/whoppingreact/about/team/gmail.png"
+                        alt="Gmail"
+                      />
 
-            <Image
-              width={28}
-              height={28}
-              src="/whoppingreact/about/team/business.png"
-              alt="Business"
-            />
+                      <Image
+                        width={28}
+                        height={28}
+                        src="/whoppingreact/about/team/business.png"
+                        alt="Business"
+                      />
 
-            <Image
-              width={28}
-              height={28}
-              src="/whoppingreact/about/team/phone.png"
-              alt="Phone"
-            />
-          </div>
+                      <Image
+                        width={28}
+                        height={28}
+                        src="/whoppingreact/about/team/phone.png"
+                        alt="Phone"
+                      />
+                    </div>
 
-          <h3
-            className="
+                    <h3
+                      className="
               text-[20px]!
               pt-3
-              text-[#FFFFFF]
+                 text-[#FFFFFF]!
               text-center
               font-bold!
               transition-all
               duration-500
               mb-1!
             "
-          >
-            Shikha Vaid
-          </h3>
+                    >
+                      Shikha Vaid
+                    </h3>
 
-          <p
-            className="
+                    <p
+                      className="
               text-[14px]!
               pb-3
               text-center
-              text-[#FFFFFF]
+                 text-[#FFFFFF]!
               group-hover:text-black
               transition-all
               duration-500
             "
-          >
-            Project Manager
-          </p>
-        </div>
-      </div>
-    </div>
-
+                    >
+                      Project Manager
+                    </p>
+                  </div>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>

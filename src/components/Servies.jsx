@@ -179,7 +179,7 @@ const Servies = () => {
                 {/* <div className="inline-flex mt-5 h-[44px]  items-center rounded-full bg-[#082359] border border-[#FFFFFF] px-4 py-1.5 text-xs md:text-sm text-[#FFFFFF] font-medium">
                 Measurable Results
               </div> */}
-                <div className="mt-20! mx-13!  max-[767px]:mx-0!  max-[767px]:mb-3 max-[400px]:pt-10! max-[767px]:flex max-[767px]:w-full! max-[767px]:justify-center">
+                <div className="mt-20! mx-13!  max-[767px]:mx-0!  max-[767px]:flex max-[767px]:w-full! max-[767px]:justify-center">
                   <div className="border font-f border-white font-[16px]! text-[#FFFFFF]!  uppercase max-[400px]:py-3! px-4 py-2 rounded-full bg-[#082359] backdrop-blur-sm mb-[30px]! w-max!">
                     Measurable Results
                   </div>
@@ -194,7 +194,7 @@ const Servies = () => {
     flex
     flex-wrap
     max-[767px]:text-[40px]!
-    max-[400px]:pt-6!
+     max-[767px]:mt-[40px]!
     max-[767px]:leading-[50px]!
     max-[767px]:justify-center
     max-[767px]:text-center
@@ -229,13 +229,12 @@ const Servies = () => {
                   performance, scalability, and long-term success.
                 </p>
                 {/* CTA Button */}
-               <button className="flex! mt-[40px]! mb-5! h-[60px]! w-[204px]! items-center! justify-center! gap-2! rounded-full! border! border-white/40! bg-[#B1DCFF]! px-6! text-[16px]! font-bold! text-[#000000]! whitespace-nowrap! max-[767px]:mx-auto!">
-  Start Your Journey
-  <span className="flex! min-h-[26px]! min-w-[26px]! items-center! justify-center!">
-    ↗
-  </span>
-</button>
-
+                <button className="flex! mt-[40px]! mb-5! h-[60px]! w-[204px]! items-center! justify-center! gap-2! rounded-full! border! border-white/40! bg-[#B1DCFF]! px-6! text-[16px]! font-bold! text-[#000000]! whitespace-nowrap! max-[767px]:mx-auto!">
+                  Start Your Journey
+                  <span className="flex! min-h-[26px]! min-w-[26px]! items-center! justify-center!">
+                    ↗
+                  </span>
+                </button>
               </div>
             </Col>
 
@@ -244,18 +243,16 @@ const Servies = () => {
               lg={5}
               className="d-flex justify-content-center align-items-center max-[767px]:!mt-0"
             >
- <div className="relative w-[462px]! h-[448px]! max-w-full! rounded-xl! overflow-hidden! max-[767px]:w-full! max-[767px]:h-[275px]!">
-  <Image
-    src="/whoppingreact/Home/serviesright.png"
-    alt="Measurable Growth Illustration"
-    fill
-    sizes="(max-width: 768px) 100vw, 462px"
-    className="object-contain!"
-    priority
-  />
-</div>
-
-
+              <div className="relative w-[462px]! h-[448px]! max-w-full! rounded-xl! overflow-hidden! max-[767px]:w-full! max-[767px]:h-[275px]!">
+                <Image
+                  src="/whoppingreact/Home/serviesright.png"
+                  alt="Measurable Growth Illustration"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 462px"
+                  className="object-contain!"
+                  priority
+                />
+              </div>
             </Col>
           </Row>
         </Container>
@@ -270,13 +267,13 @@ const Servies = () => {
                 {/* Top Box */}
 
                 <div className="backdrop-blur-md rounded-[20px]! overflow-hidden z-9 bg-[linear-gradient(146.49deg,_rgba(17,58,146,0.81)_5.13%,_rgba(44,12,65,0.81)_96.71%)] max-[767px]:mx-[15px]!">
-                  <Image
-                    src={`/whoppingreact/Home/serviesH.png`}
-                    alt="Background"
-                    fill
-                    className="absolute inset-0 -z-1 object-cover"
-                  />
-                  <div className="flex flex-wrap p-5 md:p-7  gap-x-[27px]! gap-y-[27px]! bg-[linear-gradient(146.49deg,_rgba(17,58,146,0.81)_5.13%,_rgba(44,12,65,0.81)_96.71%)]">
+                 <Image
+  src="/whoppingreact/Home/serviesH.png"
+  alt="Background"
+  fill
+  className="absolute inset-0 -z-1 object-cover max-[767px]:w-[350px]! max-[767px]:h-[480px]!"
+/>
+                  <div className="flex flex-wrap p-5 md:p-7   gap-x-[27px]! gap-y-[27px]! bg-[linear-gradient(146.49deg,_rgba(17,58,146,0.81)_5.13%,_rgba(44,12,65,0.81)_96.71%)]">
                     {[
                       "Result-Oriented Approach",
                       "Certified & Experienced Experts",
@@ -466,17 +463,17 @@ const Servies = () => {
                       className="h-[567px]! w-[611px]! max-[767px]:h-[300px]! max-[767px]:object-contain!"
                     />
                   </div>
-                  <div className="digital-back text-white max-[767px]:mx-[10px]! max-[767px]:mt-[20px]!">
-                    <h2 className="text-[35px]!  leading-[45px]!  font-bold! text-white py-0 max-[767px]:text-center! max-[767px]:text-[32px]! max-[767px]:leading-[40px]!">
+                  <div className="digital-back text-white max-[767px]:mx-[10px]! ">
+                    <h2 className="text-[35px]!  leading-[45px]!  font-bold!  max-[767px]:mt-[30px]! text-white py-0 max-[767px]:text-center! max-[767px]:text-[35px]! max-[767px]:leading-[40px]!">
                       We provide tailored digital marketing solutions across
                       various industries:
                     </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2!  mt-[29px]! w-full max-[767px]:mt-[20px]!">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2!  max-[767px]:gap-[16px]!  mt-[29px]! w-full max-[767px]:mt-[32px]!">
                       {btnArry.map((item, index) => (
                         <div
                           key={index}
-                          className="w-full max-[767px]:flex! max-[767px]:justify-center! gap-2!"
+                          className="w-full max-[767px]:flex! max-[767px]:justify-center!"
                         >
                           <button
                             type="button"
@@ -518,7 +515,7 @@ const Servies = () => {
                         </div>
                       ))}
                     </div>
-                    <p className="text-[18px]! mt-[29px]!  leading-[20px]! text-[#FFFFFF]! max-[767px]:text-center! max-[767px]:text-[16px]!">
+                    <p className="text-[18px]! mt-[29px]!  leading-[20px]! text-[#FFFFFF]! max-[767px]:text-center! max-[767px]:text-[18px]!    max-[767px]:leading-[22px]!">
                       No matter your industry, we understand your audience and
                       craft strategies that deliver results.
                     </p>
@@ -532,7 +529,6 @@ const Servies = () => {
 
       <div
         className="whatiswhoping  max-[767px]:mx-[10px]! mt-[110px]! mb-[110px]! max-[767px]:mt-[95px]!  max-[767px]:mb-[95px]! "
-     
         style={{ backgroundColor: "#111111" }}
       >
         {" "}
@@ -547,46 +543,48 @@ const Servies = () => {
                 that deliver exceptional ROI.
               </h2>
               <section className="HoemAboutus">
-                <div className="noArea mt-[56px]! items-center! justify-between! flex-wrap px-12 max-[767px]:py-8! ">
-                 <div className="flex flex-wrap lg:flex-nowrap justify-between items-center max-[767px]:!flex-col max-[767px]:!gap-4">
-  <div className="numberDiv flex flex-col py-1! z-10 bg-[#17171754] max-[767px]:!mt-[25px] max-[767px]:!items-center">
-    <span className="no text-[55px]! leading-[65px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
-      500+
-    </span>
-    <span className="notext text-[18px]! font-semibold! text-[#FFFFFF] z-40 max-w-[180px]! bg-[#17171754] max-[767px]:!text-center">
-      Businesses Grown Across USA
-    </span>
-  </div>
+                <div className="noArea mt-[56px]! mb-4! items-center! justify-between! flex-wrap px-12  max-[767px]:mt-[61px]! ">
+                  <div className="flex flex-wrap lg:flex-nowrap justify-between items-center max-[767px]:!flex-col max-[767px]:!gap-4">
+                    <div className="numberDiv flex flex-col py-1! z-10 bg-[#17171754] max-[767px]:!mt-[25px] max-[767px]:!items-center">
+                      <span className="no text-[55px]! leading-[65px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
+                        500+
+                      </span>
+                      <span className="notext text-[18px]! font-semibold! text-[#FFFFFF] z-40 max-w-[180px]! bg-[#17171754] max-[767px]:!text-center">
+                        Businesses Grown Across USA
+                      </span>
+                    </div>
 
-  <div className="numberDiv flex flex-col py-1! max-[767px]:!mt-[25px] max-[767px]:!items-center">
-    <span className="no text-[55px]! leading-[65px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
-      3x
-    </span>
-    <span className="notext text-[18px]! font-semibold! text-[#FFFFFF] max-w-[180px]! z-40 bg-[#17171754] max-[767px]:!text-center">
-      Average Map Pack visibility increase
-    </span>
-  </div>
+                    <div className="numberDiv flex flex-col py-1! max-[767px]:!mt-[25px] max-[767px]:!items-center">
+                      <span className="no text-[55px]! leading-[65px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
+                        3x
+                      </span>
+                      <span className="notext text-[18px]! font-semibold! text-[#FFFFFF] max-w-[180px]! z-40 bg-[#17171754] max-[767px]:!text-center">
+                        Average Map Pack visibility increase
+                      </span>
+                    </div>
 
-  <div className="numberDiv flex flex-col py-1! max-[767px]:!mt-[25px] max-[767px]:!items-center">
-    <span className="no text-[55px]! leading-[65px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
-      90
-    </span>
-    <span className="notext text-[18px]! font-semibold! text-[#FFFFFF] z-40 max-w-[180px]! bg-[#17171754] max-[767px]:!text-center">
-      Days to first ranking improvements
-    </span>
-  </div>
+                    <div className="numberDiv flex flex-col py-1! max-[767px]:!mt-[25px] max-[767px]:!items-center">
+                      <span className="no text-[55px]! leading-[65px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
+                        90
+                      </span>
+                      <span className="notext text-[18px]! font-semibold! text-[#FFFFFF] z-40 max-w-[180px]! bg-[#17171754] max-[767px]:!text-center">
+                        Days to first ranking improvements
+                      </span>
+                    </div>
 
-  <div className="numberDiv flex flex-col py-1! max-[767px]:!mt-[25px] max-[767px]:!items-center">
-    <span className="no text-[55px]! leading-[65px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
-      98%
-    </span>
-    <span className="notext font-semibold!
+                    <div className="numberDiv flex flex-col py-1! max-[767px]:!mt-[25px] max-[767px]:!items-center">
+                      <span className="no text-[55px]! leading-[65px]! text-[#1A98FF] z-40 bg-[#17171754] max-[767px]:!text-center">
+                        98%
+                      </span>
+                      <span
+                        className="notext font-semibold!
 
- text-[18px]! text-[#FFFFFF] z-40 max-w-[180px]! bg-[#17171754] max-[767px]:!text-center">
-      Client retention rate
-    </span>
-  </div>
-</div>
+ text-[18px]! text-[#FFFFFF] z-40 max-w-[180px]! bg-[#17171754] max-[767px]:!text-center"
+                      >
+                        Client retention rate
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </section>
             </Col>
@@ -596,13 +594,13 @@ const Servies = () => {
 
       {/* ================= TOOLS & TECHNOLOGIES SECTION ================= */}
 
-      <div className="border-[#1A62FF33] bg-[linear-gradient(90deg,_#07133D_0%,_#0B0320_100%)]">
+<div className="border-[#1A62FF33  md:bg-[linear-gradient(90deg,_#07133D_0%,_#0B0320_100%)]">
         <Container>
           <Row>
             <Col>
               <div className="relative overflow-hidden  px-6 py-10 text-center">
                 {/* Heading */}
-                <h2 className="text-[#FFFFFF] text-[45px]! font-extrabold! md:text-[41px]! leading-[1.3]">
+                <h2 className="text-[#FFFFFF] text-[45px]! font-semibold! md:text-[41px]!  max-[767px]:text-[35px]!  leading-[1.3]">
                   Powered by Advanced{" "}
                   <span className="text-[#1A98FF]">Tools & Technologies</span>
                 </h2>
@@ -624,7 +622,7 @@ const Servies = () => {
                   ].map((item, index) => (
                     <button
                       key={index}
-                      className={`px-6 py-3 rounded-full! border!  border-[#FFFFFF9C]! text-[#FFFFFF] text-[20px]!  leading-[20px]! transition-all duration-300
+                      className={`px-6 py-3 rounded-full! border!  max-[767px]:text-[16px]!  border-[#FFFFFF9C]! text-[#FFFFFF] text-[20px]! leading-[20px]! transition-all duration-300
                 hover:bg-[#1A98FF]
                   `}
                     >
@@ -638,104 +636,140 @@ const Servies = () => {
         </Container>
       </div>
 
-      <div className="ourDigitelMarketing   mt-[110px]! max-[767px]:mt-[95px]! max-[767px]:mx-[10px]!">
+      <div className="ourDigitelMarketing mt-[110px]! max-[767px]:mt-[95px]! max-[767px]:mx-[10px]!">
         <Container>
           <Row>
             <Col>
               <section className="HoemAboutus">
                 <div className=" imagePointSection">
-                  <div className="leftSide">
-                    <Image
-                      src={`/whoppingreact/Home/bussnessM.png`}
-                      alt=""
-                      width={1000}
-                      height={1000}
-                      className="w-full h-auto"
-                    />
+                <div
+  className="
+    relative
+    flex
+    w-full
+    shrink-0
+    justify-center
+    mb-[175px]
+    min-[991px]:mb-[30px]
+    min-[991px]:w-[47%]
+  "
+>
+  {/* Main Image */}
+  <Image
+    src="/whoppingreact/Home/bussnessM.png"
+    alt="Business Meeting"
+    width={1000}
+    height={1000}
+    className="
+      w-[450px]!
+      h-[615px]!
+      rounded-[18px]
+      object-cover
+      max-[767px]:w-[316px]!
+         max-[767px]:h-[318px]!
+    "
+  />
 
-                    <Image
-                      src={`/whoppingreact/Home/100k.png`}
-                      alt=""
-                      width={245}
-                      height={245}
-                      className="imgeSmall"
-                    />
-                  </div>
+  {/* 100K Traffic Image */}
+  <Image
+    src="/whoppingreact/Home/100k.png"
+    alt="Monthly Traffic"
+    width={245}
+    height={245}
+    className="
+      absolute
+      z-10
+      top-[215px]
+      left-1/2
+      w-[75%]!
+      max-w-[245px]!
+      h-auto!
+      -translate-x-1/2
+      min-[991px]:top-auto
+      min-[991px]:left-auto
+      min-[991px]:right-[-4%]
+      min-[991px]:bottom-[-30px]
+      min-[991px]:w-[245px]!
+      min-[991px]:translate-x-0
+    "
+  />
+</div>
                   <div className=" text-[#FFFFFF]!">
-                    <div className="textArea">
-                      <h2 className="MainHeading text-[35px]! font-extrabold! max-[767px]:text-center!">
+                    <div className="textArea  max-[767px]:mt-[95px]!">
+                      <h2 className="MainHeading text-[30px]! leading-[35px]! font-extrabold! max-[767px]:text-center!">
                         Ready to Grow Your Business Online?
                       </h2>
-                      <span className="!para mt-7 flex flex-col max-[767px]:mt-30px! max-[767px]:text-center!">
+                      <span className="!para mt-8! flex flex-col   leading-[20px]! max-[767px]:mt-[30px]! max-[767px]:text-center!">
                         <p className="text-[16px]! pb-1">
                           Let’s turn your ideas into measurable success.
                         </p>
-                        <p className="text-[16px]! font-normal! max-[767px]:mt-30px! max-[767px]:text-center!">
+                        <p className="text-[16px]! mb-[60px]! font-normal! leading-[20px]!  max-[767px]:mb-[71px]!   max-[767px]:mt-30px! max-[767px]:text-center!">
                           Whether you`re looking to increase traffic, generate
                           leads, or boost sales — we have the expertise to make
                           it happen.
                         </p>
                       </span>
                     </div>
-                    {services.map((item) => (
-                      <div
-                        key={item.id}
-                        className={`p-4! pl-0! border-b border-gray-700 cursor-pointer
-                          flex justify-start items-center align-middle gap-2!
-                           max-[767px]:mt-50px!
-                          transition-all duration-300`}
-                      >
-                        <span className="imgeDiv">
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            width={19}
-                            height={19}
-                          />
-                        </span>
-                        <span>
-                          <span className="text-[14px] font-normal">
-                            {item.title}
-                          </span>
-                        </span>
-                      </div>
-                    ))}
+{services.map((item, index) => (
+  <div
+    key={item.id}
+    className={`
+      p-4! pl-0!
+      cursor-pointer
+      flex justify-start items-center
+      gap-[14px]!
+      transition-all duration-300
+      ${index !== services.length - 1
+        ? "border-b border-gray-700"
+        : "border-none"}
+    `}
+  >
+    <span className="imgeDiv">
+      <Image
+        src={item.image}
+        alt={item.title}
+        width={19}
+        height={19}
+      />
+    </span>
 
-<button
-  className="
+    <span className="text-[14px] leading-[16px]! font-normal">
+      {item.title}
+    </span>
+  </div>
+))}
+                    <button
+                      className="
     flex
     mt-[40px]!
     mb-5
-    h-[60px]!
+  h-[60px]!
     w-[364px]!
-    max-[767px]:!max-w-[364px]
-    max-[767px]:!mx-auto
+    max-[767px]:w-[260px]!
+
+    max-[767px]:mx-auto! 
     !items-center
     justify-center
-    gap-2!
     rounded-full!
     !border
     !border-white/40
     !bg-transparent
-    !px-6
     text-[16px]!
     font-bold!
     !text-[#000000]
     bg-[#B1DCFF]!
-    whitespace-nowrap!
-    max-[767px]:!whitespace-normal
+ 
   "
->
-  <span className="max-[767px]:!text-center">
-    Let’s Build Something
-    <br className="max-[767px]:!block hidden" />
-    Great Together
-  </span>
-
-  <span className="!flex !h-[26px] !w-[26px] !min-w-[26px] !items-center !justify-center">
-    ↗
-  </span>
-</button>
+                    >
+                      <span className="max-[767px]:!text-center">
+                        Let’s Build Something
+                        <br className="max-[767px]:!block hidden" />{" "}
+                        Great Together 
+                      </span>
+                      <span className="flex! h-[26px]! w-[26px]! min-w-[26px]! items-center! justify-center!">
+                        ↗
+                      </span>
+                    </button>
                     {/* <button className="bg-[linear-gradient(90deg,_#1B51CC_0%,_#2B0E66_100%)] mt-15! hover:opacity-90 transition-all px-8 py-3 !rounded-full text-white font-medium">
                      
                     </button> */}
@@ -753,7 +787,7 @@ const Servies = () => {
             <Col>
               <div className="HoemAboutus">
                 <div className="textArea flex flex-col item-center justify-center">
-                  <h2 className="MainHeading text-center font-black! text-[#FFFFFF]">
+                  <h2 className="MainHeading text-[35px]! text-center font-extrabold! text-[#FFFFFF]">
                     Frequently Asked Questions
                   </h2>
                   {/* <span className="!para mt-6 flex flex-col">
@@ -780,14 +814,14 @@ const Servies = () => {
                               {/* Question */}
                               <button
                                 onClick={() => toggleFaq(index)}
-                                className="w-full flex items-center justify-between text-left px-5 py-4 text-white"
+                                className="w-full flex items-start justify-between text-left px-6 py-3 text-white"
                               >
-                                <div className="flex items-center gap-3">
-                                  <span className="text-sm font-semibold">
+                                <div className="flex items-start gap-3">
+                                  <span className="text-[16px]! font-normal leading-[20px]! ">
                                     Q.{index + 1}
                                   </span>
 
-                                  <span className="text-[15px] text-[#FFFFFF]! text-gray-200">
+                                  <span className="text-[15px]! text-[#FFFFFF]! text-gray-200">
                                     {faq.question}
                                   </span>
                                 </div>
@@ -803,7 +837,7 @@ const Servies = () => {
 
                               {/* Answer */}
                               {openIndex === index && (
-                                <div className=" px-5 py-4 text-sm text-gray-300 pt-0!">
+                                <div className=" px-5 py-4 text-[16px]! font-normal! leading-[20px]!  text-gray-300 pt-0!">
                                   {faq.answer || "Answer coming soon..."}
                                 </div>
                               )}
