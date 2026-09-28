@@ -10,7 +10,7 @@ import { MdOutlineManageAccounts } from "react-icons/md";
 import { TiArrowUpOutline } from "react-icons/ti";
 import "swiper/css";
 import "swiper/css/autoplay";
-
+import Link from "next/link";
 import { Autoplay } from "swiper/modules";
 const AboutUs = () => {
   const [active, setActive] = useState(1);
@@ -131,20 +131,34 @@ const AboutUs = () => {
 
                   {/* Buttons */}
                   <div className="mt-[54px]! flex! !flex-row !items-start gap-4! pb-1 max-[767px]:mt-[46px]! max-[767px]:!flex-col max-[767px]:!items-center max-[767px]:!justify-center max-[767px]:gap-5!">
-                    <button className="!flex h-[60px]! w-[210px]! !items-center !justify-center !gap-2 !rounded-full !bg-[#B1DCFF] !px-6 !text-[16px] !font-bold !text-[#000000] !whitespace-nowrap">
-                      Get Started Now
-                      <span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">
-                        {" "}
-                        ↗
-                      </span>
-                    </button>
+                    <Link
+                      href=" https://whoppingseo.com/contact/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#1A62FF]! no-underline! hover:text-[#1A62FF]! hover:no-underline!"
+                    >
+                      <button className="!flex h-[60px]! w-[210px]! !items-center !justify-center !gap-2 !rounded-full !bg-[#B1DCFF] !px-6 !text-[16px] !font-bold !text-[#000000] !whitespace-nowrap">
+                        Get Started Now
+                        <span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">
+                          {" "}
+                          ↗
+                        </span>
+                      </button>
+                    </Link>
 
-                    <button className="!flex h-[60px]! w-[210px]! !items-center !justify-center !gap-2 !rounded-full !border !border-white/40 !bg-transparent !px-6 text-[16px]! !font-bold !text-[#FFFFFF] !whitespace-nowrap">
-                      See Our Services
-                      <span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">
-                        ↗
-                      </span>
-                    </button>
+                    <Link
+                      href=" https://whoppingseo.com/services/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#1A62FF]! no-underline! hover:text-[#1A62FF]! hover:no-underline!"
+                    >
+                      <button className="!flex h-[60px]! w-[210px]! !items-center !justify-center !gap-2 !rounded-full !border !border-white/40 !bg-transparent !px-6 text-[16px]! !font-bold !text-[#FFFFFF] !whitespace-nowrap">
+                        See Our Services
+                        <span className="flex! min-h-[26px]! min-w-[26px]! !items-center justify-center!">
+                          ↗
+                        </span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </section>

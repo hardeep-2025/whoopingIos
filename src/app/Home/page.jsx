@@ -264,6 +264,8 @@ const Home = () => {
                         href="/services/digital-marketing-services/"
                         target="_blank"
                         rel="noopener noreferrer"
+                                            className="text-[#1A62FF]! no-underline! hover:text-[#1A62FF]! hover:no-underline!"
+
                       >
                         <span className="text-[#1A98FF]">
                           {" "}

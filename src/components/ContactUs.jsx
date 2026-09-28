@@ -46,8 +46,8 @@ src={`/whoppingreact/contact/bg.png`}
                             />
                           </div>
                           <div className='flex flex-col text-[18px] '>
-                            <span className='font-extrabold! pb-3'>ADDRESS</span>
-                            <span className=''>400, Valley Road, Suite 202,Mount Arlington NJ 07856</span>
+                            <span className='font-extrabold! pb-3 text-[#FFFFFF]!'>ADDRESS</span>
+                            <span className='text-[#FFFFFF]!'>400, Valley Road, Suite 202,Mount Arlington NJ 07856</span>
                           </div>
                       </div>
                       <div className='w-1/3 flex gap-3 items-start max-[991px]:w-full '>
@@ -60,8 +60,8 @@ src={`/whoppingreact/contact/bg.png`}
                             />
                           </div>
                           <div className='flex flex-col text-[18px]'>
-                            <span className='font-extrabold! pb-3'>GENERAL QUERIES</span>
-                            <span className=''>+91-9915841204</span>
+                            <span className='font-extrabold! pb-3 text-[#FFFFFF]!'>GENERAL QUERIES</span>
+                            <span className='text-[#FFFFFF]!'>+91-9915841204</span>
                           </div>
                       </div>
                       <div className='w-1/3 flex gap-3 items-start max-[991px]:w-full '>
@@ -74,8 +74,8 @@ src={`/whoppingreact/contact/bg.png`}
                             />
                           </div>
                           <div className='flex flex-col text-[18px]'>
-                            <span className='font-extrabold! pb-3'>Careers</span>
-                            <span className='max-[455px]:text-[14px]'>contact@whoppingseo.com</span>
+                            <span className='font-extrabold! pb-3 text-[#FFFFFF]!'>Careers</span>
+                            <span className='max-[455px]:text-[14px] text-[#FFFFFF]!'>contact@whoppingseo.com</span>
                           </div>
                       </div>
 

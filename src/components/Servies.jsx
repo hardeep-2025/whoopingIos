@@ -9,6 +9,7 @@ import { GiArtificialIntelligence } from "react-icons/gi";
 import { MdOutlineManageAccounts } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BiUpArrowAlt } from "react-icons/bi";
+import Link from "next/link";
 
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -600,7 +601,7 @@ const Servies = () => {
             <Col>
               <div className="relative overflow-hidden  px-6 py-10 text-center">
                 {/* Heading */}
-                <h2 className="text-[#FFFFFF] text-[45px]! font-semibold! md:text-[41px]!  max-[767px]:text-[35px]!  leading-[1.3]">
+                <h2 className="text-[#FFFFFF] text-[35px]! font-semibold! md:text-[41px]!  max-[767px]:text-[35px]!  leading-[1.3]">
                   Powered by Advanced{" "}
                   <span className="text-[#1A98FF]">Tools & Technologies</span>
                 </h2>
@@ -738,6 +739,13 @@ const Servies = () => {
     </span>
   </div>
 ))}
+
+ <Link
+                    href=" https://whoppingseo.com/contact/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#1A62FF]! no-underline! hover:text-[#1A62FF]! hover:no-underline!"
+                  >
                     <button
                       className="
     flex
@@ -770,6 +778,8 @@ const Servies = () => {
                         ↗
                       </span>
                     </button>
+</Link>
+
                     {/* <button className="bg-[linear-gradient(90deg,_#1B51CC_0%,_#2B0E66_100%)] mt-15! hover:opacity-90 transition-all px-8 py-3 !rounded-full text-white font-medium">
                      
                     </button> */}
@@ -787,7 +797,7 @@ const Servies = () => {
             <Col>
               <div className="HoemAboutus">
                 <div className="textArea flex flex-col item-center justify-center">
-                  <h2 className="MainHeading text-[35px]! text-center font-extrabold! text-[#FFFFFF]">
+                  <h2 className="MainHeading text-[35px]! text-center font-extrabold! text-[#ffffff]!">
                     Frequently Asked Questions
                   </h2>
                   {/* <span className="!para mt-6 flex flex-col">
@@ -821,7 +831,7 @@ const Servies = () => {
                                     Q.{index + 1}
                                   </span>
 
-                                  <span className="text-[15px]! text-[#FFFFFF]! text-gray-200">
+                                  <span className="text-[16px]!   leading-[24px]! text-[#FFFFFF]! text-gray-200">
                                     {faq.question}
                                   </span>
                                 </div>
