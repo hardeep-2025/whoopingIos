@@ -1115,6 +1115,7 @@ const AboutUs = () => {
               text-[20px]!
               pt-3!
               text-[#FFFFFF]!
+               group-hover:text-black!
               text-center
               font-bold!
               transition-all
@@ -1131,7 +1132,7 @@ const AboutUs = () => {
               pb-3!
                   text-[#FFFFFF]!
               text-center!
-              group-hover:text-black
+              group-hover:text-black!
               transition-all
               duration-500
             "
@@ -1157,7 +1158,7 @@ const AboutUs = () => {
           duration-800
 
           hover:bg-white
-          hover:text-black
+          hover:text-black!
 
           max-md:min-w-full
           max-md:w-full
@@ -1231,6 +1232,7 @@ const AboutUs = () => {
               pt-3!
               text-center
                   text-[#FFFFFF]!
+                    group-hover:text-black!
               font-bold!
               transition-all
               duration-500
@@ -1246,7 +1248,8 @@ const AboutUs = () => {
               pb-3
               text-center
                   text-[#FFFFFF]!
-              group-hover:text-black
+                    group-hover:text-black!
+              group-hover:text-black!
               transition-all
               duration-500
             "
@@ -1288,12 +1291,13 @@ const AboutUs = () => {
                       alt="Shikha Vaid"
                       className="
               w-full
-              h-[390px]
+              h-[390px]!
               object-cover
               px-2
               transition-transform
               duration-500
               group-hover:scale-105
+                   text-[#000000]!
             "
                     />
                   </div>
@@ -1313,6 +1317,7 @@ const AboutUs = () => {
               bottom-22
               py-1
               bg-white
+              text-[#000000]!
               w-full
               gap-[45px]
               pb-3
@@ -1345,6 +1350,7 @@ const AboutUs = () => {
               text-[20px]!
               pt-3
                  text-[#FFFFFF]!
+                   group-hover:text-black!
               text-center
               font-bold!
               transition-all
