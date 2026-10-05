@@ -18,7 +18,7 @@ const ContactUs = () => {
         <Container>
           <Row>
             <Col>
-              <section className="bannnerSection  flex items-center justify-center mt-[10%]  flex-col gap-3 text-white">
+              <section className="bannnerSection  flex items-center justify-center mt-[48px]!   max-[768px]:mt-[32px]! flex-col gap-3 text-white">
                 <div className="bannerHeading font-bold  font-['Poppins']">
                   <h1 className="text-[45px]! border-b !border-[#FFFFFF] leading-[38px] md:text-[45px] md:leading-[50px] font-bold!">
                     Contact Us
@@ -32,16 +32,17 @@ const ContactUs = () => {
       <div className="">
         <ContactSection />
       </div>
-      <div className="bg-black pb-[6rem] max-[480px]:mt-[3rem]!">
+      <div className="bg-black pb-[6rem]!  max-[480px]:mt-[3rem]!">
         <Container>
           <Row>
-            <Col>
-              <div className="flex gap-15 border border-.5 py-15 rounded-[15px] px-10 bg-[linear-gradient(104.88deg,_rgba(36,25,43,0.77)_-4.64%,_rgba(16,4,4,0.77)_94.31%)]! max-[991px]:flex-col max-[991px]:items-center max-[767px]:py-10! max-[767px]:px-5! max-[767px]:mt-[18rem] max-[767px]:items-start">
+            <Col className="-mt-[230px]!">
+              <div className="flex gap-15 border border-.5 py-15 rounded-[15px] px-10 bg-[linear-gradient(104.88deg,_rgba(36,25,43,0.77)_-4.64%,_rgba(16,4,4,0.77)_94.31%)]! max-[991px]:flex-col max-[991px]:items-center max-[767px]:py-10!  max-[767px]:mt-[18rem]! max-[768px]:items-start!">
                 <div className="w-1/3 flex gap-3 items-start max-[991px]:w-full  ">
                   <div>
                     <Image
-                      width={82}
+                      width={42}
                       height={42}
+                        className="min-w-[42px]! min-h-[42px]! w-[42px]! h-[42px]!"
                       src={`/whoppingreact/contact/img1.png`}
                       alt=""
                     />
@@ -57,12 +58,15 @@ const ContactUs = () => {
                 </div>
                 <div className="w-1/3 flex gap-3 items-start max-[991px]:w-full ">
                   <div>
-                    <Image
-                      width={42}
-                      height={42}
-                      src={`/whoppingreact/contact/img2.png`}
-                      alt=""
-                    />
+<Image
+  width={42}
+  height={42}
+  className="min-w-[42px]! min-h-[42px]! w-[42px]! h-[42px]!"
+  src="/whoppingreact/contact/img2.png"
+  alt="max-42"
+/>
+
+
                   </div>
                   <div className="flex flex-col text-[18px]">
                     <span className="font-extrabold! pb-3 text-[#FFFFFF]!">
@@ -76,9 +80,10 @@ const ContactUs = () => {
                 <div className="w-1/3 flex gap-3 items-start max-[991px]:w-full ">
                   <div>
                     <Image
-                      width={42}
+                         width={42}
                       height={42}
                       src={`/whoppingreact/contact/img3.png`}
+                        className="min-w-[42px]! min-h-[42px]! w-[42px]! h-[42px]!"
                       alt=""
                     />
                   </div>

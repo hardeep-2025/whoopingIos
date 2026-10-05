@@ -113,7 +113,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="py-[8rem] bg-black h-[700px]">
+    <div className="px-[8rem]! py-[8rem]!  max-[768px]:px-[0px]! bg-black h-[700px]">
       {/* Toast Notifications */}
       <ToastContainer
         position="top-end"
@@ -142,14 +142,14 @@ const ContactSection = () => {
 
       <Container>
         {/* Main Box */}
-        <div className="relative -top-[500px]! z-20 overflow-hidden rounded-[20px] border border-[#2140FF]! bg-[linear-gradient(146.49deg,_rgba(17,58,146,0.4)_5.13%,_rgba(44,12,65,0.4)_96.71%)] px-20! md:px-10 py-20 max-[991px]:py-15 max-[991px]:px-10! max-[480px]:-top-[640px]!">
+        <div className="relative -top-[630px]! z-20 overflow-hidden rounded-[20px] border border-[#2140FF]! bg-[linear-gradient(146.49deg,_rgba(17,58,146,0.4)_5.13%,_rgba(44,12,65,0.4)_96.71%)] px-12! md:px-10 py-12! max-[991px]:py-15 max-[991px]:px-10! max-[480px]:-top-[640px]!">
           <div className="relative z-10">
             {/* Heading */}
-            <h2 className="text-[#FFFFFF]! text-[35px]! font-semibold! pb-[32px]!  max-[768px]:-leading-[24px]! max-[768px]:text-center! max-[768px]:pb-[39px]!">
+            <h2 className="text-[#FFFFFF]! text-[35px]! font-semibold! pb-[32px]!  max-[768px]:leading-[25px]! max-[768px]:text-center! max-[768px]:pb-[39px]!">
               Who we are?
             </h2>
 
-            <p className="text-[#FFFFFF] text-[16px]! max-[768px]:text-[18px]! font-medium! leading-[24px]! pb-[32px]!  max-[768px]:pb-[47px]! max-[768px]:text-center!">
+            <p className="text-[#FFFFFF] text-[16px]! max-[768px]:text-[18px]! font-medium! leading-[20px]! pb-[32px]!  max-[768px]:pb-[47px]! max-[768px]:text-center!">
               We at WhoppingSEO think that the success of our customers is
               directly proportional to our growth as a company. We want to help
               our clients achieve in their businesses by providing them with
@@ -158,12 +158,12 @@ const ContactSection = () => {
             </p>
 
             {/* Sub Heading */}
-            <h3 className="text-[#FFFFFF]! text-[35px]! font-normal! mb-[13px]! max-[768px]:text-center! max-[768px]: mb-[22px]!">
+            <h3 className="text-[#FFFFFF]! text-[35px]! font-normal!  max-[768px]:text-center! max-[768px]:mb-[22px]!">
               Our <span className="text-[#1A98FF] font-bold!">Team</span> Is
               Ready To Help
             </h3>
 
-            <p className="text-[#FFFFFF]! text-[16px]!  leading-[20px]! font-medium! max-[768px]:text-center!  max-[768px]:text-[18px]!">
+            <p className="text-[#FFFFFF]! text-[16px]! leading-[20px]! mt-[13px]! font-medium! max-[768px]:text-center!  max-[768px]:text-[18px]!">
               We’re here to help! Reach out to us for expert guidance,
               personalized SEO solutions, or any questions you have.
             </p>
@@ -226,7 +226,7 @@ const ContactSection = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-gradient-to-r from-[#1B51CC] to-[#2B0E66] hover:bg-[#1B52D6] transition-all duration-300 text-white w-[196px] h-[50px] text-[20px]! rounded-full! flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70"
+                  className="bg-gradient-to-r  from-[#1B51CC] to-[#2B0E66] hover:bg-[#1B52D6] transition-all duration-300 text-white w-[196px]! h-[50px]! text-[20px]! rounded-full! flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70"
                 >
                   Send Message
                 </button>
@@ -304,7 +304,7 @@ const ContactSection = () => {
               <button
                 type="button"
                 onClick={() => setShowSuccessModal(false)}
-                className="text-[#FFFFFF] text-[16px] max-[767px]:mt-[39px]! mt-[39px]! font-normal! w-[196px]! h-[50px]! rounded-[25px]! border-[1px] border-[#CAC5C51C] transition-all duration-300 hover:opacity-90 flex items-center justify-center cursor-pointer"
+                className="text-[#FFFFFF] text-[20px]! max-[767px]:mt-[39px]! mt-[39px]!  font-normal! w-[196px]! h-[50px]! rounded-[25px]! border-[1px] border-[#CAC5C51C] transition-all duration-300 hover:opacity-90 flex items-center justify-center cursor-pointer"
                 style={{
                   background:
                     "linear-gradient(90deg, #1B51CC 0%, #2B0E66 100%)",

@@ -97,7 +97,7 @@ const services = [
     description:
       "Our AI SEO services help small businesses automate keyword research, find content gaps, and optimize content faster. From Chandigarh to Frisco, TX, we help businesses compete smarter with AI-driven SEO.",
     icon: `/whoppingreact/seo/followup/img1.png`,
-    link: "Get AI SEO Strategy →",
+    // link: "Get AI SEO Strategy →",
   },
 
   {
@@ -106,7 +106,7 @@ const services = [
     description:
       "Dominate local search results in Frisco, Dallas, Chandigarh, Zirakpur, and beyond. We optimize your Google Business Profile, build local citations, and create location-targeted content that puts your business on the Google Map Pack.",
     icon: `/whoppingreact/seo/followup/img3.png`,
-    link: "Explore SEO Services →",
+    // link: "Explore SEO Services →",
   },
 
   {
@@ -115,7 +115,7 @@ const services = [
     description:
       "Content that ranks, educates, and converts. Our content team creates SEO-optimized blog posts, landing pages, infographics, and long-form guides that attract your target audience and guide them through your sales funnel.",
     icon: `/whoppingreact/seo/followup/img6.png`,
-    link: "Free Technical Audit →",
+    // link: "Free Technical Audit →",
   },
 
   {
@@ -124,7 +124,7 @@ const services = [
     description:
       "We optimize every page element — title tags, headers, meta descriptions, internal links, and body content — around keywords your ideal customers actually search. Content that ranks and converts, not just fills space.",
     icon: `/whoppingreact/seo/followup/img5.png`,
-    link: "Read Our SEO Blog →",
+    // link: "Read Our SEO Blog →",
   },
 
   {
@@ -133,7 +133,7 @@ const services = [
     description:
       "High-quality backlinks from relevant, authoritative websites remain one of Google’s most powerful ranking signals. We build links that count — through guest posting, digital PR, and strategic outreach that earns your site real authority.",
     icon: `/whoppingreact/seo/followup/img2.png`,
-    link: "Build Authority →",
+    // link: "Build Authority →",
   },
 
   {
@@ -142,7 +142,7 @@ const services = [
     description:
       "Product pages, category structures, crawlability, and conversion optimization — our e-commerce SEO services drive more qualified buyers to your online store and turn traffic into revenue through smart on-site strategy.",
     icon: `/whoppingreact/seo/followup/img4.png`,
-    link: "Grow Your Store →",
+    // link: "Grow Your Store →",
   },
 ];
     return (
