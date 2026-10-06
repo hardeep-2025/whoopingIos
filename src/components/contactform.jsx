@@ -113,7 +113,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="px-[8rem]! py-[8rem]!  max-[768px]:px-[0px]! bg-black h-[700px]">
+    <div className="px-[8rem]! py-[66px]!  max-[768px]:px-[0px]! bg-black h-[700px]">
       {/* Toast Notifications */}
       <ToastContainer
         position="top-end"
@@ -140,9 +140,10 @@ const ContactSection = () => {
         </Toast>
       </ToastContainer>
 
-      <Container>
+  
         {/* Main Box */}
-        <div className="relative -top-[630px]! z-20 overflow-hidden rounded-[20px] border border-[#2140FF]! bg-[linear-gradient(146.49deg,_rgba(17,58,146,0.4)_5.13%,_rgba(44,12,65,0.4)_96.71%)] px-12! md:px-10 py-12! max-[991px]:py-15 max-[991px]:px-10! max-[480px]:-top-[640px]!">
+   <div className="relative max-w-[865px]! m-auto! z-20 overflow-hidden rounded-[20px] border border-[#2140FF]! bg-[linear-gradient(146.49deg,_rgba(17,58,146,0.4)_5.13%,_rgba(44,12,65,0.4)_96.71%)] px-12! md:px-12! py-12! max-[768px]:-top-[40px]! max-[768px]:mx-[10px]! max-[768px]:px-2!  ">
+
           <div className="relative z-10">
             {/* Heading */}
             <h2 className="text-[#FFFFFF]! text-[35px]! font-semibold! pb-[32px]!  max-[768px]:leading-[25px]! max-[768px]:text-center! max-[768px]:pb-[39px]!">
@@ -234,7 +235,7 @@ const ContactSection = () => {
             </form>
           </div>
         </div>
-      </Container>
+  
 
       {/* Responsive Success Modal */}
       <Modal

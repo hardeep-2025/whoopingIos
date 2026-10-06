@@ -8,19 +8,28 @@ const ContactUs = () => {
 
   return (
     <div>
-      <div className="banner relative h-[680px] overflow-hidden">
-        <Image
+      <div className="banner relative h-[620px]!"
+      
+      >
+       <div
+  className="absolute top-0 left-1/2 z-0 h-full w-full bg-[#0d0d0d]! max-w-[1440px] -translate-x-1/2 bg-no-repeat bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/whoppingreact/contact/bg.png')",
+  }}
+></div>
+
+        {/* <Image
           src={`/whoppingreact/contact/bg.png`}
           alt="Banner"
           fill
           className="img -z-10 object-cover "
-        />
+        /> */}
         <Container>
           <Row>
             <Col>
               <section className="bannnerSection  flex items-center justify-center mt-[48px]!   max-[768px]:mt-[32px]! flex-col gap-3 text-white">
                 <div className="bannerHeading font-bold  font-['Poppins']">
-                  <h1 className="text-[45px]! border-b !border-[#FFFFFF] leading-[38px] md:text-[45px] md:leading-[50px] font-bold!">
+                  <h1 className="text-[45px]! border-b  relative !border-[#FFFFFF] leading-[38px] md:text-[45px] md:leading-[50px] font-bold!" style={{zIndex:"2"}}>
                     Contact Us
                   </h1>
                 </div>
@@ -28,15 +37,18 @@ const ContactUs = () => {
             </Col>
           </Row>
         </Container>
+
+         <ContactSection />
       </div>
-      <div className="">
-        <ContactSection />
-      </div>
-      <div className="bg-black pb-[6rem]!  max-[480px]:mt-[3rem]!">
+      {/* <div className="">
+       
+      </div> */}
+      
+<div className="bg-black relative z-10    mt-[clamp(95px,34.72vw,500px)]!">
         <Container>
           <Row>
-            <Col className="-mt-[230px]!">
-              <div className="flex gap-15 border border-.5 py-15 rounded-[15px] px-10 bg-[linear-gradient(104.88deg,_rgba(36,25,43,0.77)_-4.64%,_rgba(16,4,4,0.77)_94.31%)]! max-[991px]:flex-col max-[991px]:items-center max-[767px]:py-10!  max-[767px]:mt-[18rem]! max-[768px]:items-start!">
+            <Col className="">
+              <div className="flex gap-15 border border-.5 py-15 rounded-[15px] px-10 bg-[linear-gradient(104.88deg,_rgba(36,25,43,0.77)_-4.64%,_rgba(16,4,4,0.77)_94.31%)]! max-[991px]:flex-col max-[991px]:items-center max-[767px]:py-10!  max-[767px]:mt-[37rem]! max-[768px]:items-start!">
                 <div className="w-1/3 flex gap-3 items-start max-[991px]:w-full  ">
                   <div>
                     <Image
@@ -104,7 +116,7 @@ const ContactUs = () => {
             </Col>
           </Row>
         </Container>
-        <div className="pt-[6rem]">
+        <div className="pb-[6rem]!  mt-[6rem]!">
           <Container>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.769286539613!2d-74.64184262523446!3d40.89887552615623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c375763ac00001%3A0xf2e72952de3b4ce8!2s400%20Valley%20Rd%20Suite%20202%2C%20Mt%20Arlington%2C%20NJ%2007856%2C%20USA!5e0!3m2!1sen!2sin!4v1779792310059!5m2!1sen!2sin"
