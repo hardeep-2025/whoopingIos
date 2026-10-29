@@ -1,5 +1,5 @@
 import BlogClient from "./BlogClient";
 
 export default function BlogPage() {
-  return <BlogClient page={1} />;
+  return <BlogClient />;
 }
